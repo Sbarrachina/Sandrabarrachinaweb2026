@@ -1,0 +1,38 @@
+{
+  "libros": [
+    {
+      "id": "portada_relatos",
+      "titulo": "Un legado a los que vendrán...",
+      "descripcion": "Los sueños son lugares desconocidos.Escribir sobre el futuro puede ser emocionante y aterrador. ¿Qué pasaría si un extraterrestre visitara a una niña valiente? ¿Y si te aventuras en un gran viaje hacia lo desconocido? Estas pequeñas historias encuentran su hogar en el papel,  disfrutando del viaje.",
+      "imagen": "https://m.media-amazon.com/images/I/51QfcgO2zcL.jpg",
+      "anio": 2018,
+      "enlaceAmazon": "https://www.amazon.es/LEGADO-LOS-QUE-VENDR%C3%81N-DETR%C3%81S-ebook/dp/B07S2ZF286/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9WEZ9XK5TUIA&keywords=sandra+barrachina&qid=1683298048&sprefix=sandra+barrachina%2Caps%2C119&sr=8-1"
+    },
+    {
+      "id": "portada_kasicasting",
+      "titulo": "KasiCasting",
+      "descripcion": "Tomar consciencia de lo que sientes. Aprender a convivir sin preocuparse de lo que dirán,es importante. Aceptarse a uno mismo es lo que realmente nos hace avanzar.Potenciar todo aquello que nos hace humanos.Tener la libertad de ser quién queramos.Se puede huir de todo menos de uno mismo, aunque el caos reine en nuestro interior. Historias que merecen ser escuchadas. ",
+      "imagen": "/MisImg/portadas libro/portada_kasicasting.jpg",
+      "anio": 2019,
+      "enlaceAmazon":"https://www.amazon.es/kasicasting-Sra-SANDRA-BARRACHINA/dp/1073183815/ref=sr_1_3?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9WEZ9XK5TUIA&keywords=sandra+barrachina&qid=1683298048&sprefix=sandra+barrachina%2Caps%2C119&sr=8-3"
+    },
+    {
+      "id": "portada_ebook_julia",
+      "titulo": "Despierta Julia",
+      "descripcion": "Añoranza a aquellos tiempos donde la gente conversaba. La tecnología nos hace perder lo más valioso, la imaginación.Dependemos demasiado de ella y nos roba humanidad. Cuando dejemos de sentir como humanos que nos quedará, nada. Julia tiene que aceptar esa realidad y no perder su esencia en el camino. Relacionarse con este nuevo mundo.Un verdadero despertar.",
+      "imagen": "/MisImg/portadas libro/portada ebook julia .jpg",
+      "anio": 2020,
+      "enlaceAmazon":"https://www.amazon.es/DESPIERTA-JULIA-SANDRA-BARRACHINA-ARRIBAS/dp/B08GTL73YM/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9WEZ9XK5TUIA&keywords=sandra+barrachina&qid=1683298095&sprefix=sandra+barrachina%2Caps%2C119&sr=8-2"
+    },
+    {
+      "id": "portada_ebook_relatos2",
+      "titulo": "Cuéntame y Sonríe",
+      "descripcion": "¡Sumérgete en un universo de historias fascinantes! En este libro de relatos, encontrarás una mezcla perfecta de ciencia ficción, romance, ternura, diversión. Desde historias futuristas que te harán reflexionar, hasta relatos distópicos que te mantendrán en vilo, pasando por tres tiernas historias infantiles y unas navideñas que te envolverán de magia.Te llevarán a sonreír y a soñar despierto.",
+      "imagen": "/MisImg/portadas libro/portada_ebook_relatos2.png",
+      "anio": 2023,
+      "enlaceAmazon":"https://www.amazon.es"
+    }
+  ]
+}
+
+

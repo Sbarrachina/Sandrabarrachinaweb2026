@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light" >
+        
+        <img src="./img/logoSbarrachina.png" id="Sb-logo">
+        
+        </a>
+        
+
+        <img src="./img/menu.png" class="menu-icon" onclick="menutoggle()">
+     <ul id="MenuItems">
+        <li class="nav-item">
+            <a href="/index.html">BIENVENIDOS</a>
+        </li>
+    
+        
+        <li class="nav-item ">
+            <a href="/pospo.html">POSTPRODUCCIÓN</a>
+        </li>
+
+        <li class="nav-item ">
+            <a href="/Eventos.html">EVENTOS</a>
+        </li>
+
+        <li class="nav-item ">
+            <a href="videobooks.html">VIDEOBOOKS</a>
+        
+        </li>
+        <li class="nav-item ">
+            <a href="/escritora.html">ESCRITORA</a>
+        </li>
+        <li class="nav-item ">
+            <a href="/web.html">DISEÑO WEB</a>
+        </li>
+        <li class="nav-item ">
+            <a href="/Contacto.html">CONTACTO</a>
+        </li>
+     </ul>
+    </nav>
+   </header>
+    
+    
+    <main>
+        <div class="container-fluid p-0">
+            <div class="site-content-contacto">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column" id="fondo-contacto">
+                        <h1 class="site-title-contacto">Contacto</h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-1">
+            <div class="container text-center">
+                
+                
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="contact-col">
+            <form action="https://formspree.io/f/mpzbokrb" method="post">
+                <input type="text" name="name" placeholder="introduce su nombre
+                " required>
+                <input type="email" name="email" placeholder="introduce su correo electronico
+                " required>
+                <input type="text" name="subject" placeholder="Introduce tu asunto" required>
+                <textarea  rows="8" name="message"  placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn site-btn2 px-4 py-3 mr-4 btn-light" id="boton2-c">ENVIAR MENSAJE</button>
+
+
+            </form>
+
+        </div>
+
+        
+       
+        
+        
+    </main>
+    
+    
+    
+    <footer>
+        <div class="section-5 text-center">
+            
+            <div class="social" style="margin: 5%;">
+                   <div class="d-flex flex-row justify-content-center">
+                    <a href="https://www.linkedin.com/in/sandra-barrachina-00569630/" target="_blank"><i class="fa fa-linkedin m-2"></i></a>
+                    <a href="https://www.youtube.com/c/SandraBarrachina" target="_blank"><i class="fa fa-youtube m-2"></i></a>
+                    <a href="https://www.instagram.com/sbarrachinafilms/" target="_blank"><i class="fa fa-instagram m-2"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063769971904" target="_blank"><i class="fa fa-facebook m-2"></i></a>
+                    <a href="https://github.com/Sbarrachina" target="_blank"><i class="fa fa-github m-2"></i></a>
+                    <a href="https://twitter.com/Sbarrachinafilm" target="_blank"><i class="fa fa-twitter m-2"></i></a>
+                    <a href="https://www.flickr.com/photos/120700302@N02//" target="_blank"><i class="fa fa-flickr m-2"></i></a>
+                    
+                   </div>                    
+                </div>
+                
+            <h5 style="color: rgb(24, 25, 25);"> ©2023 All rights reserved | made by SBarrachina Code  <i class="fa fa-heart-o"></i></h5>
+          </div>
+    </footer>     
+    <script src="./servicios-2.js"></script>   
+
+
+    <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="./venobox/venobox.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".venobox").venobox({
+          closeColor: "#f4f4f4",
+          spinColor: "#f4f4f4",
+          arrowsColor: "#f4f4f4",
+          closeBackground: "#17191D",
+          overlayColor: "rgba(23,25,29,0.8)",
+        });
+      });
+    </script>
+</html>

@@ -1,0 +1,1616 @@
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+  --teal: #397c78;
+  --teal-dark: #2f625f;
+  --teal-deep: #285552;
+
+  --gold: #d59b4d;
+  --gold-light: #e3b66d;
+
+  --sand: #eee1cf;
+  --sand-light: #f8f3eb;
+  --cream: #fffaf2;
+
+  --ink: #292521;
+  --muted: #6d665e;
+  --white: #ffffff;
+
+  --line: #dfd2c0;
+
+  --shadow-soft: 0 8px 25px rgba(58, 43, 28, .08);
+  --shadow-medium: 0 14px 35px rgba(58, 43, 28, .13);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  line-height: 1.7;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+  width: 100%;
+
+  background: var(--cream);
+
+  border-bottom:
+    1px solid var(--line);
+
+  box-shadow:
+    0 4px 18px rgba(60, 42, 25, .05);
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-link {
+  width: 100%;
+
+  display: block;
+
+  padding: 0;
+}
+
+#Sb-logo {
+  width: 100%;
+
+  max-width: none;
+
+  height: auto;
+
+  max-height: none;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+#MenuItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 25px 30px 20px;
+  list-style: none;
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+#MenuItems a {
+  position: relative;
+
+  display: inline-block;
+
+  padding: 10px 2px;
+
+  color: var(--ink);
+
+  transition:
+    color .25s ease,
+    transform .25s ease;
+}
+
+#MenuItems a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 3px;
+
+  width: 0;
+  height: 1.5px;
+
+  background: var(--teal);
+
+  transition: width .25s ease;
+}
+
+#MenuItems a:hover,
+#MenuItems a.active {
+  color: var(--teal);
+}
+
+#MenuItems a:hover::after,
+#MenuItems a.active::after {
+  width: 100%;
+}
+
+
+
+/* =========================================================
+   HERO / BENVINGUDA
+========================================================= */
+
+.site-content-bienvenida {
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(57, 124, 120, .90),
+      rgba(47, 98, 95, .88)
+    ),
+    url("/MisImg/foto2-2.png") center / cover;
+}
+
+.site-content-bienvenida::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(47, 43, 39, .22),
+      rgba(255, 255, 255, 0)
+    );
+}
+
+.welcome-inner {
+  position: relative;
+  z-index: 2;
+
+  padding: 85px 25px;
+
+  color: var(--white);
+}
+
+.welcome-kicker {
+  margin: 0 0 14px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  letter-spacing: .28em;
+}
+
+.site-title-b {
+  margin: 0 0 25px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: clamp(3.5rem, 8vw, 7rem);
+
+  font-weight: 300;
+
+  line-height: .95;
+
+  letter-spacing: -.04em;
+
+  text-shadow: 0 4px 18px rgba(0, 0, 0, .15);
+}
+
+
+/* =========================================================
+   TEXT HERO
+========================================================= */
+
+.site-desc-b {
+  margin: 8px 0;
+
+  font-size: clamp(1.15rem, 2.2vw, 1.8rem);
+
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  letter-spacing: .02em;
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.social {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 13px;
+}
+
+.inicio-social {
+  margin: 32px 0 30px;
+}
+
+.social a {
+  width: 60px;
+  height: 60px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, .60);
+
+  border-radius: 50%;
+
+  color: rgb(233, 240, 242);
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    color .25s ease,
+    border-color .25s ease;
+}
+
+.social a:hover {
+  background: var(--white);
+
+  color: rgb(13, 12, 12);
+
+  border-color: var(--white);
+
+  transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   BOTONS — BASE
+========================================================= */
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 13px 30px;
+
+  border-radius: 3px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: .82rem;
+
+  font-weight: 600;
+
+  letter-spacing: .10em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background-color .25s ease,
+    color .25s ease,
+    border-color .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+
+/* =========================================================
+   LA MEVA OBRA
+   VERD + BLANC
+========================================================= */
+
+.btn-accent {
+  background: var(--teal);
+
+  color: #ffffff !important;
+
+  border: 2px solid var(--teal);
+
+  box-shadow:
+    0 6px 18px rgba(47, 98, 95, .16);
+}
+
+.btn-accent:hover {
+  background: var(--teal-dark);
+
+  color: #ffffff !important;
+
+  border-color: var(--teal-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(47, 98, 95, .25);
+}
+
+
+/* =========================================================
+   POSTPRODUCCIÓ
+   BLANC + VERD
+========================================================= */
+
+.btn-outline {
+  background: #ffffff;
+
+  color: var(--teal-dark) !important;
+
+  border: 2px solid var(--teal);
+
+  box-shadow:
+    0 4px 14px rgba(47, 98, 95, .10);
+}
+
+.btn-outline:hover {
+  background: var(--teal);
+
+  color: #ffffff !important;
+
+  border-color: var(--teal);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(47, 98, 95, .22);
+}
+
+
+/* =========================================================
+   VEURE ELS LLIBRES
+   VERD + BLANC
+========================================================= */
+
+.btn-amazon {
+  background: var(--teal);
+
+  color: #ffffff !important;
+
+  border: 2px solid var(--teal);
+
+  box-shadow:
+    0 6px 18px rgba(47, 98, 95, .16);
+}
+
+.btn-amazon:hover {
+  background: var(--teal-dark);
+
+  color: #ffffff !important;
+
+  border-color: var(--teal-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(47, 98, 95, .25);
+}
+
+
+/* =========================================================
+   ESCRIPTORA
+   BLANC + VERD
+========================================================= */
+
+.btn-light-outline {
+  background: #ffffff;
+
+  color: var(--teal-dark) !important;
+
+  border: 2px solid var(--teal);
+
+  box-shadow:
+    0 4px 14px rgba(47, 98, 95, .10);
+}
+
+.btn-light-outline:hover {
+  background: var(--teal);
+
+  color: #ffffff !important;
+
+  border-color: var(--teal);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(47, 98, 95, .22);
+}
+
+
+/* =========================================================
+   CONTACTA
+   PER SOBRE DE FONS FOTOGRÀFIC
+========================================================= */
+
+.site-btn2 {
+  min-width: 145px;
+
+  background: var(--teal);
+
+  color: #ffffff !important;
+
+  border: 2px solid #ffffff;
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, .20);
+}
+
+.site-btn2:link,
+.site-btn2:visited {
+  color: #ffffff !important;
+}
+
+.site-btn2:hover {
+  background: var(--teal-dark);
+
+  color: #ffffff !important;
+
+  border-color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, .28);
+}
+
+
+/* =========================================================
+   FILA DE BOTONS
+========================================================= */
+
+.buttons-row {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 14px;
+
+  flex-wrap: wrap;
+
+  margin: 30px 0 48px;
+}
+
+
+/* =========================================================
+   FOCUS — ACCESSIBILITAT
+========================================================= */
+
+.btn:focus-visible {
+  outline: 2px solid var(--gold);
+
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   SECTION 1
+========================================================= */
+
+.section-1 {
+  padding: 95px 25px 105px;
+  
+
+  background: var(--cream);
+}
+
+.container {
+  max-width: 1180px;
+
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-kicker {
+  margin-bottom: 8px;
+
+  color: var(--teal-dark);
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: 600;
+
+  font-size: 2rem;
+
+  letter-spacing: .22em;
+
+  text-transform: uppercase;
+}
+
+.section-kicker.light {
+  color: var(--gold-light);
+}
+
+.heading-1 {
+  margin: 12px auto 22px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: clamp(2.3rem, 4vw, 4rem);
+
+  font-weight: 300;
+
+  line-height: 1.12;
+
+  letter-spacing: -.035em;
+}
+
+.text-1 {
+  max-width: 100vw;
+  
+}
+
+
+/* =========================================================
+   TEXT NORMAL
+========================================================= */
+
+.para-1 {
+  max-width: 100v;
+
+  margin: 0 auto 18px;
+
+  color: var(--muted);
+
+  font-size: 1.5rem;
+
+  font-weight: 400;
+
+  line-height: 1.75;
+  
+
+}
+
+
+/* =========================================================
+   VIDEO
+========================================================= */
+
+.video {
+  max-width: 1000px;
+
+  margin: 0 auto 60px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #222;
+
+  box-shadow: var(--shadow-medium);
+}
+
+.video img {
+  width: 100%;
+
+  aspect-ratio: 16 / 8.2;
+
+  object-fit: cover;
+}
+
+.video::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(57, 124, 120, .12),
+      rgba(213, 155, 77, .08)
+    );
+
+  pointer-events: none;
+}
+
+.video-play {
+  position: absolute;
+
+  z-index: 2;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  color: var(--white);
+
+  font-size: 4.5rem;
+
+  transition:
+    transform .3s ease,
+    color .3s ease;
+}
+
+.video-play:hover {
+  color: var(--gold-light);
+
+  transform:
+    translate(-50%, -50%)
+    scale(1.08);
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.cards-row {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  margin-top: 25px;
+}
+
+.cards-row-second {
+  margin-top: 25px;
+}
+
+.card {
+  background: var(--white);
+
+  border: 1px solid var(--line);
+
+  box-shadow: var(--shadow-soft);
+
+  overflow: hidden;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: var(--shadow-medium);
+}
+
+.card img {
+  width: 100%;
+
+  height: 185px;
+
+  object-fit: cover;
+
+  transition: transform .5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card-body {
+  padding: 25px 25px 28px;
+}
+
+.card h4 {
+  margin: 0 0 12px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 1.25rem;
+
+  font-weight: 500;
+
+  color: var(--teal-dark);
+}
+
+.card p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: .88rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SECTION 2 — ESCRIPTORA
+========================================================= */
+
+.section-2 {
+  padding: 0;
+
+  background:
+    linear-gradient(
+      120deg,
+      #3d7773 0%,
+      #2f625f 55%,
+      #526c68 100%
+    );
+
+  color: var(--white);
+}
+
+.section-2-inner {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 90px 35px;
+
+  display: grid;
+
+  grid-template-columns: 1.15fr .85fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.heading-1.amazon {
+  max-width: 650px;
+
+  margin-left: 0;
+}
+
+.para {
+  max-width: 650px;
+
+  color: rgba(255, 255, 255, .84);
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   AUDIO BOX
+========================================================= */
+
+.audio-box {
+  background: rgba(255, 250, 242, .97);
+
+  color: var(--ink);
+
+  padding: 34px;
+
+  box-shadow:
+    0 16px 38px rgba(24, 42, 40, .20);
+}
+
+.audio-kicker {
+  color: var(--teal-dark);
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: .70rem;
+
+  font-weight: 600;
+
+  letter-spacing: .18em;
+}
+
+.audio-box h2 {
+  margin: 10px 0 12px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 1.9rem;
+
+  font-weight: 300;
+
+  line-height: 1.15;
+
+  letter-spacing: -.02em;
+}
+
+.audio-box p {
+  color: var(--muted);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   AUDIO LINKS
+========================================================= */
+
+.audio-links {
+  display: grid;
+
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.audio-links a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 14px 16px;
+
+  border: 1px solid var(--line);
+
+  transition:
+    border-color .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.audio-links a:hover {
+  border-color: var(--teal);
+
+  transform: translateX(5px);
+
+  box-shadow:
+    0 5px 15px rgba(58, 43, 28, .08);
+}
+
+.audio-links i {
+  font-size: 1.45rem;
+
+  color: var(--teal);
+}
+
+.audio-links strong {
+  display: block;
+
+  font-size: .98rem;
+
+  font-weight: 600;
+}
+
+.audio-links small {
+  display: block;
+
+  color: var(--muted);
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: .72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  background: #272522;
+
+  color: var(--white);
+}
+
+.section-5 {
+  padding: 70px 25px 35px;
+}
+
+.section-5 h4 {
+  margin: 0 0 25px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 1.8rem;
+
+  font-weight: 300;
+}
+
+
+/* =========================================================
+   BOTÓ FOOTER
+========================================================= */
+
+.section-5 .btn-accent {
+  background: var(--teal);
+
+  color: #ffffff !important;
+
+  border-color: var(--teal);
+}
+
+.section-5 .btn-accent:hover {
+  background: var(--teal-dark);
+
+  color: #ffffff !important;
+
+  border-color: var(--teal-dark);
+
+  transform: translateY(-2px);
+}
+
+.footer-social {
+  margin: 38px 0;
+}
+
+.copyright {
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: .70rem;
+
+  font-weight: 300;
+
+  color: #aaa;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  #MenuItems {
+    gap: 18px;
+  }
+
+  .cards-row,
+  .section-2-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .section-2-inner {
+    gap: 45px;
+  }
+}
+
+
+
+/*  */
+ /* =========================================================
+    CORRECCIÓ FINAL DELS BOTONS
+    ========================================================= */
+
+ /* BOTÓ GENERAL */
+ .btn {
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.10em !important;
+  text-transform: uppercase !important;
+
+  min-height: 50px !important;
+  padding: 12px 28px !important;
+
+  border-radius: 3px !important;
+
+  text-decoration: none !important;
+
+  transition:
+    background-color .25s ease,
+    color .25s ease,
+    border-color .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease !important;
+}
+
+
+/* =========================================================
+   LA MEVA OBRA
+   ========================================================= */
+
+.btn-accent {
+  background-color: #397c78 !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border: 2px solid #397c78 !important;
+
+  box-shadow: 0 6px 18px rgba(47, 98, 95, .16) !important;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: #2f625f !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border-color: #2f625f !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 9px 22px rgba(47, 98, 95, .25) !important;
+}
+
+
+/* =========================================================
+   POSTPRODUCCIÓ
+   ========================================================= */
+
+.btn-outline {
+  background-color: #ffffff !important;
+  background-image: none !important;
+
+  color: #2f625f !important;
+
+  border: 2px solid #397c78 !important;
+
+  box-shadow: 0 4px 14px rgba(47, 98, 95, .10) !important;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: #397c78 !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border-color: #397c78 !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 9px 22px rgba(47, 98, 95, .22) !important;
+}
+
+
+/* =========================================================
+   VEURE ELS LLIBRES
+   ========================================================= */
+
+.btn-amazon {
+  background-color: #397c78 !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border: 2px solid #397c78 !important;
+
+  box-shadow: 0 6px 18px rgba(47, 98, 95, .16) !important;
+}
+
+.btn-amazon:hover,
+.btn-amazon:focus {
+  background-color: #2f625f !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border-color: #2f625f !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 9px 22px rgba(47, 98, 95, .25) !important;
+}
+
+
+/* =========================================================
+   ESCRIPTORA
+   ========================================================= */
+
+.btn-light-outline {
+  background-color: #ffffff !important;
+  background-image: none !important;
+
+  color: #2f625f !important;
+
+  border: 2px solid #397c78 !important;
+
+  box-shadow: 0 4px 14px rgba(47, 98, 95, .10) !important;
+}
+
+.btn-light-outline:hover,
+.btn-light-outline:focus {
+  background-color: #397c78 !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border-color: #397c78 !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 9px 22px rgba(47, 98, 95, .22) !important;
+}
+
+
+/* =========================================================
+   CONTACTA SOBRE FONS FOSC / FOTOGRAFIA
+   ========================================================= */
+
+.site-btn2 {
+  background-color: #397c78 !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border: 2px solid #ffffff !important;
+
+  box-shadow: 0 7px 20px rgba(0, 0, 0, .20) !important;
+}
+
+.site-btn2:hover,
+.site-btn2:focus {
+  background-color: #2f625f !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  border-color: #ffffff !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .28) !important;
+}
+
+
+/* =========================================================
+   EVITAR QUE BOOTSTRAP CANVII LA LLETRA
+   ========================================================= */
+
+.btn-accent,
+.btn-outline,
+.btn-amazon,
+.btn-light-outline,
+.site-btn2 {
+  -webkit-text-fill-color: currentColor !important;
+}
+
+
+/* =========================================================
+   BOTONS DE BOOTSTRAP ANTICS
+   ========================================================= */
+
+#boton,
+#boton-cv,
+#boton-show {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+
+/* =========================================================
+   MENÚ MÒBIL
+========================================================= */
+
+.menu-icon {
+  display: none;
+}
+
+
+/* =========================================================
+   MÒBIL
+========================================================= */
+/* =========================================================
+   MÒBIL
+   CAPÇALERA ESPECÍFICA PER A MÒBIL
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  /* -------------------------------------------------------
+     HEADER
+     ------------------------------------------------------- */
+
+  header {
+    width: 100%;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 3px 12px rgba(60, 42, 25, .08);
+    position: relative;
+    z-index: 1000;
+  }
+
+
+  /* -------------------------------------------------------
+     BARRA SUPERIOR DEL MÒBIL
+     ------------------------------------------------------- */
+
+  .navbar {
+    width: 100%;
+    height: 82px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 18px;
+
+    position: relative;
+  }
+
+
+  /* -------------------------------------------------------
+     LOGO MÒBIL
+     ------------------------------------------------------- */
+
+  .logo-link {
+    width: auto;
+    display: block;
+    padding: 0;
+  }
+
+  #Sb-logo {
+    display: block;
+
+    width: 155px;
+    max-width: 155px;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+
+  /* -------------------------------------------------------
+     BOTÓ HAMBURGUESA
+     ------------------------------------------------------- */
+
+  .menu-icon {
+    display: flex;
+
+    width: 48px;
+    height: 48px;
+
+    padding: 7px;
+
+    margin: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--cream);
+
+    border: 1px solid var(--line);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1100;
+
+    box-shadow:
+      0 3px 10px rgba(60, 42, 25, .10);
+  }
+
+
+  /* -------------------------------------------------------
+     TRES LÍNIES
+     ------------------------------------------------------- */
+
+  .menu-icon span {
+    display: block;
+
+    width: 25px;
+    height: 2px;
+
+    margin: 4px 0;
+
+    background: var(--teal-dark);
+
+    transition:
+      transform .25s ease,
+      opacity .25s ease;
+  }
+
+
+  /* -------------------------------------------------------
+     MENÚ TANCAT
+     ------------------------------------------------------- */
+
+  #MenuItems {
+    display: none;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    flex-direction: column;
+
+    background: #e4e4e4;
+
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+
+    box-shadow:
+      0 8px 20px rgba(0, 0, 0, .12);
+
+    position: absolute;
+
+    left: 0;
+    top: 82px;
+
+    z-index: 1050;
+  }
+
+
+  /* -------------------------------------------------------
+     MENÚ OBERT
+     ------------------------------------------------------- */
+
+  #MenuItems.open {
+    display: flex;
+  }
+
+
+  /* -------------------------------------------------------
+     ELEMENTS DEL MENÚ
+     ------------------------------------------------------- */
+
+  #MenuItems li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid #c8c8c8;
+  }
+
+  #MenuItems li:last-child {
+    border-bottom: none;
+  }
+
+
+  /* -------------------------------------------------------
+     ENLLAÇOS
+     ------------------------------------------------------- */
+
+  #MenuItems a {
+    display: block;
+
+    width: 100%;
+
+    padding: 17px 22px;
+
+    color: var(--ink);
+
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: .95rem;
+    font-weight: 600;
+
+    letter-spacing: .10em;
+
+    text-transform: uppercase;
+
+    background: #d6d6d6;
+
+    transition:
+      background-color .2s ease,
+      color .2s ease,
+      padding-left .2s ease;
+  }
+
+
+  /* -------------------------------------------------------
+     OPCIÓ ACTIVA
+     ------------------------------------------------------- */
+
+  #MenuItems a.active {
+    color: var(--teal-dark);
+    background: #d5d5d5;
+  }
+
+
+  /* -------------------------------------------------------
+     HOVER / TOC
+     ------------------------------------------------------- */
+
+  #MenuItems a:hover,
+  #MenuItems a:focus {
+    color: var(--teal-dark);
+    background: #f0f0f0;
+    padding-left: 28px;
+  }
+
+
+  /* -------------------------------------------------------
+     TREIEM LA LÍNIA DEL MENÚ D'ESCRIPTORI
+     ------------------------------------------------------- */
+
+  #MenuItems a::after {
+    display: none;
+  }
+
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .site-content-bienvenida {
+    min-height: 590px;
+  }
+
+  .welcome-inner {
+    padding: 65px 20px;
+  }
+
+  .welcome-kicker {
+    font-size: 1.25rem;
+    letter-spacing: .16em;
+  }
+
+  .site-title-b {
+    font-size: 3.5rem;
+    line-height: .98;
+  }
+
+  .site-desc-b {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+
+  /* =======================================================
+     SECTION 1
+     ======================================================= */
+
+  .section-1 {
+    padding: 65px 20px;
+  }
+
+  .heading-1 {
+    font-size: 2.25rem;
+  }
+
+  .para-1 {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+
+  /* =======================================================
+     BOTONS
+     ======================================================= */
+
+  .buttons-row {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 12px;
+
+    margin: 25px 0 40px;
+  }
+
+  .buttons-row .btn {
+    width: 100%;
+
+    min-height: 50px;
+
+    padding: 12px 18px;
+
+    font-size: .78rem;
+
+    letter-spacing: .08em;
+  }
+
+
+  /* =======================================================
+     CARDS
+     ======================================================= */
+
+  .cards-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  /* =======================================================
+     SECTION 2
+     ======================================================= */
+
+  .section-2-inner {
+    grid-template-columns: 1fr;
+
+    padding: 60px 20px;
+
+    gap: 40px;
+  }
+
+
+  /* =======================================================
+     AUDIO
+     ======================================================= */
+
+  .audio-box {
+    padding: 24px;
+  }
+
+  .audio-box h2 {
+    font-size: 1.6rem;
+  }
+
+
+  /* =======================================================
+     SOCIAL
+     ======================================================= */
+
+  .social {
+    gap: 10px;
+  }
+
+  .social a {
+    width: 44px;
+    height: 44px;
+  }
+
+}
