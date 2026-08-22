@@ -1,0 +1,1488 @@
+/* =========================================================
+   STYLESPOSTPO.CSS
+   PÀGINA EXCLUSIVA DE POSTPRODUCCIÓ
+   ========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+   .postpo-page {
+    --postpo-teal: #397c78;
+    --postpo-teal-dark: #2f625f;
+    --postpo-teal-deep: #285552;
+    --postpo-gold: #d59b4d;
+    --postpo-gold-light: #e3b66d;
+    --postpo-cream: #fffaf2;
+    --postpo-sand: #eee1cf;
+    --postpo-white: #ffffff;
+    --postpo-ink: #292521;
+    --postpo-muted: #6d665e;
+    --postpo-line: #dfd2c0;
+  
+    --postpo-shadow:
+      0 10px 30px rgba(58, 43, 28, .10);
+  
+    --postpo-shadow-big:
+      0 18px 45px rgba(58, 43, 28, .16);
+  }
+  
+  
+  /* =========================================================
+     BASE
+     ========================================================= */
+  
+  .postpo-page {
+    margin: 0;
+    background: var(--postpo-cream);
+    color: var(--postpo-ink);
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .postpo-page *,
+  .postpo-page *::before,
+  .postpo-page *::after {
+    box-sizing: border-box;
+  }
+  
+  .postpo-page img {
+    max-width: 100%;
+  }
+  
+  .postpo-main {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  /* =========================================================
+     CAPÇALERA
+     ========================================================= */
+  
+  .postpo-header {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .postpo-navbar {
+    width: 100%;
+  }
+  
+  
+  /* =========================================================
+     LOGO
+     ========================================================= */
+  
+  .postpo-logo {
+    display: block;
+  }
+  
+  
+  /* =========================================================
+     MENÚ
+     ========================================================= */
+  
+  .postpo-page #MenuItems {
+    margin-bottom: 0;
+  }
+  
+  .postpo-page #MenuItems a {
+    text-decoration: none;
+  }
+  
+  
+  /* =========================================================
+     HERO
+     ========================================================= */
+  
+  .postpo-hero {
+    position: relative;
+    min-height: 650px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    overflow: hidden;
+  
+    background-image: url("/MisImg/foto1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+    text-align: center;
+  }
+  
+  
+  /* =========================================================
+     CAPA SOBRE LA FOTOGRAFIA
+     ========================================================= */
+  
+  .postpo-hero-overlay {
+    position: absolute;
+    inset: 0;
+  
+    background:
+      linear-gradient(
+        135deg,
+        rgba(20, 30, 29, .68),
+        rgba(57, 124, 120, .34)
+      );
+  
+    z-index: 1;
+  }
+  
+  
+  /* =========================================================
+     CONTINGUT HERO
+     ========================================================= */
+  
+  .postpo-hero-content {
+    position: relative;
+    z-index: 2;
+  
+    width: min(900px, 92%);
+    padding: 80px 20px;
+  
+    color: var(--postpo-white);
+  }
+  
+  
+  /* =========================================================
+     TÍTOL HERO
+     ========================================================= */
+  
+  .postpo-title {
+    margin: 0 auto 28px;
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 400;
+  
+    line-height: .98;
+    letter-spacing: -.035em;
+  
+    text-shadow:
+      0 4px 20px rgba(0, 0, 0, .30);
+  }
+  
+  
+  /* =========================================================
+     DESCRIPCIÓ HERO
+     ========================================================= */
+  
+  .postpo-description {
+    max-width: 720px;
+    margin: 0 auto;
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+    line-height: 1.55;
+  
+    color: rgba(255, 255, 255, .94);
+  }
+  
+  
+  /* =========================================================
+     XARXES SOCIALS
+     ========================================================= */
+  
+  .postpo-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  
+  /* =========================================================
+     SOCIAL HERO
+     ========================================================= */
+  
+  .postpo-hero-social {
+    margin: 32px auto;
+  }
+  
+  .postpo-social a {
+    width: 48px;
+    height: 48px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid rgba(255, 255, 255, .65);
+    border-radius: 50%;
+  
+    color: var(--postpo-white);
+  
+    font-size: 18px;
+    text-decoration: none;
+  
+    transition:
+      transform .25s ease,
+      background-color .25s ease,
+      color .25s ease,
+      border-color .25s ease;
+  }
+  
+  .postpo-social a:hover {
+    background: var(--postpo-white);
+    color: var(--postpo-teal-dark);
+  
+    border-color: var(--postpo-white);
+  
+    transform: translateY(-4px);
+  }
+  
+  
+  /* =========================================================
+     BOTONS
+     ========================================================= */
+  
+  .postpo-button {
+    display: inline-flex;
+  
+    align-items: center;
+    justify-content: center;
+  
+    min-height: 52px;
+    padding: 13px 32px;
+  
+    border: 2px solid var(--postpo-teal);
+    border-radius: 3px;
+  
+    background: var(--postpo-teal);
+    color: var(--postpo-white) !important;
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: .88rem;
+    font-weight: 600;
+  
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  
+    text-decoration: none !important;
+  
+    cursor: pointer;
+  
+    box-shadow:
+      0 7px 20px rgba(0, 0, 0, .18);
+  
+    transition:
+      background-color .25s ease,
+      border-color .25s ease,
+      transform .25s ease,
+      box-shadow .25s ease;
+  }
+  
+  .postpo-button:hover {
+    background: var(--postpo-teal-dark);
+    border-color: var(--postpo-teal-dark);
+  
+    color: var(--postpo-white) !important;
+  
+    transform: translateY(-3px);
+  
+    box-shadow:
+      0 11px 28px rgba(0, 0, 0, .24);
+  }
+  
+  .postpo-hero-button {
+    margin-top: 25px;
+  }
+  
+  
+  /* =========================================================
+     CONTENIDOR
+     ========================================================= */
+  
+  .postpo-container {
+    width: min(1180px, calc(100% - 50px));
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  /* =========================================================
+     INTRODUCCIÓ
+     ========================================================= */
+  
+  .postpo-intro {
+    padding: 100px 0 70px;
+    background: var(--postpo-cream);
+  }
+  
+  .postpo-text-center {
+    text-align: center;
+  }
+  
+  
+  /* =========================================================
+     KICKER
+     ========================================================= */
+  
+  .postpo-kicker {
+    margin: 0 0 12px;
+  
+    color: var(--postpo-teal-dark);
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: 3rem;
+    font-weight: 600;
+  
+    letter-spacing: .25em;
+    text-transform: uppercase;
+  }
+  
+  
+  /* =========================================================
+     TÍTOLS
+     ========================================================= */
+  
+  .postpo-heading {
+    max-width: 100vw;
+  
+    margin: 0 auto 28px;
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+  
+    font-weight: 400;
+  
+    line-height: 1.08;
+    letter-spacing: -.035em;
+  
+    color: var(--postpo-ink);
+  }
+  
+  
+  /* =========================================================
+     TEXT
+     ========================================================= */
+  
+  .postpo-text {
+    max-width: 100vw;
+  
+    margin: 0 auto;
+  
+    color: var(--postpo-muted);
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  
+  /* =========================================================
+     PORTFOLIO VIDEO
+     ========================================================= */
+  
+  .postpo-portfolio {
+    padding: 25px 0 90px;
+    background: var(--postpo-cream);
+  }
+  
+  .postpo-feature-video {
+    position: relative;
+  
+    width: 100%;
+  
+    aspect-ratio: 16 / 8.5;
+  
+    background-size: cover;
+    background-position: center;
+  
+    overflow: hidden;
+  
+    box-shadow: var(--postpo-shadow-big);
+  }
+  
+  .postpo-feature-video::after {
+    content: "";
+  
+    position: absolute;
+    inset: 0;
+  
+    background:
+      linear-gradient(
+        135deg,
+        rgba(57, 124, 120, .12),
+        rgba(0, 0, 0, .18)
+      );
+  
+    pointer-events: none;
+  }
+  
+  
+  /* =========================================================
+     BOTÓ PLAY GRAN
+     ========================================================= */
+  
+  .postpo-play-button {
+    position: absolute;
+  
+    z-index: 3;
+  
+    left: 50%;
+    top: 50%;
+  
+    transform:
+      translate(-50%, -50%);
+  
+    color: var(--postpo-white);
+  
+    font-size: 75px;
+    line-height: 1;
+  
+    text-decoration: none;
+  
+    transition:
+      transform .3s ease,
+      color .3s ease;
+  }
+  
+  .postpo-play-button:hover {
+    color: var(--postpo-gold-light);
+  
+    transform:
+      translate(-50%, -50%)
+      scale(1.08);
+  }
+  
+  
+  /* =========================================================
+     EINES DE TREBALL
+     ========================================================= */
+  
+  .postpo-tools {
+    padding: 90px 0 110px;
+  
+    background: #f5eee4;
+  }
+  
+  
+  /* =========================================================
+     GRID EINES
+     ========================================================= */
+  
+  .postpo-tools-grid {
+    width: min(1180px, calc(100% - 50px));
+  
+    margin: 55px auto 0;
+  
+    display: grid;
+  
+    grid-template-columns:
+      repeat(3, 1fr);
+  
+    gap: 25px;
+  }
+  
+  
+  /* =========================================================
+     TARGETES EINES
+     ========================================================= */
+  
+  .postpo-tool-card {
+    position: relative;
+  
+    /*
+       IMPORTANT:
+       No fem les fotografies quadrades.
+       La targeta permet que les fotografies
+       verticals conservin la seva proporció.
+    */
+  
+    min-height: 340px;
+  
+    overflow: hidden;
+  
+    background: #ddd;
+  
+    box-shadow: var(--postpo-shadow);
+  
+    transition:
+      transform .35s ease,
+      box-shadow .35s ease;
+  }
+  
+  
+  /* =========================================================
+     IMATGES EINES
+     ========================================================= */
+  
+  .postpo-tool-card img {
+    width: 100%;
+    height: 100%;
+  
+    /*
+       CONTAIN = NO TALLA LA FOTOGRAFIA
+    */
+  
+    object-fit: contain;
+  
+    object-position: center;
+  
+    display: block;
+  
+    background: #eee5d8;
+  
+    transition:
+      transform .5s ease;
+  }
+  
+  .postpo-tool-card:hover {
+    transform: translateY(-5px);
+  
+    box-shadow:
+      var(--postpo-shadow-big);
+  }
+  
+  .postpo-tool-card:hover img {
+    transform: scale(1.03);
+  }
+  
+  
+  /* =========================================================
+     CAPA EINES
+     ========================================================= */
+  
+  .postpo-tool-overlay {
+    position: absolute;
+  
+    inset: 0;
+  
+    display: flex;
+  
+    align-items: flex-end;
+    justify-content: center;
+  
+    padding: 25px;
+  
+    background:
+      linear-gradient(
+        to top,
+        rgba(0, 0, 0, .72),
+        rgba(0, 0, 0, 0)
+      );
+  
+    transition:
+      background .35s ease;
+  }
+  
+  .postpo-tool-card:hover
+  .postpo-tool-overlay {
+    background:
+      linear-gradient(
+        to top,
+        rgba(47, 98, 95, .82),
+        rgba(47, 98, 95, .08)
+      );
+  }
+  
+  
+  /* =========================================================
+     TÍTOL EINES
+     ========================================================= */
+  
+  .postpo-tool-overlay h3 {
+    margin: 0;
+  
+    color: var(--postpo-white);
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: 1.5rem;
+    font-weight: 500;
+  
+    letter-spacing: .12em;
+  
+    text-transform: uppercase;
+  
+    transform: translateY(0);
+  
+    transition:
+      transform .3s ease;
+  }
+  
+  .postpo-tool-card:hover
+  .postpo-tool-overlay h3 {
+    transform: translateY(-8px);
+  }
+  
+  
+  /* =========================================================
+     TREBALLS
+     ========================================================= */
+  
+  .postpo-work {
+    padding: 105px 0 115px;
+  
+    background: var(--postpo-cream);
+  }
+  
+  
+  /* =========================================================
+     CAPÇALERA TREBALLS
+     ========================================================= */
+  
+  .postpo-work-header {
+    text-align: center;
+  
+    margin-bottom: 55px;
+  }
+  
+  .postpo-work-title {
+    margin: 0 0 15px;
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: clamp(3rem, 6vw, 5rem);
+  
+    font-weight: 400;
+  
+    line-height: 1;
+  
+    letter-spacing: .03em;
+  }
+  
+  .postpo-work-intro {
+    max-width: 750px;
+  
+    margin: auto;
+  
+    color: var(--postpo-muted);
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: 1.5rem;
+  
+    line-height: 1.7;
+  }
+  
+  
+  /* =========================================================
+     GALERIA
+     ========================================================= */
+  
+  .postpo-gallery {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(3, 1fr);
+  
+    gap: 22px;
+  }
+  
+  
+  /* =========================================================
+     ELEMENT GALERIA
+     ========================================================= */
+  
+  .postpo-gallery-item {
+    position: relative;
+  
+    min-height: 255px;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    overflow: hidden;
+  
+    box-shadow:
+      var(--postpo-shadow);
+  
+    transition:
+      transform .35s ease,
+      box-shadow .35s ease;
+  }
+  
+  .postpo-gallery-item::after {
+    content: "";
+  
+    position: absolute;
+    inset: 0;
+  
+    background:
+      linear-gradient(
+        to top,
+        rgba(0, 0, 0, .42),
+        rgba(0, 0, 0, .02)
+      );
+  
+    transition:
+      background .35s ease;
+  }
+  
+  .postpo-gallery-item:hover {
+    transform: translateY(-5px);
+  
+    box-shadow:
+      var(--postpo-shadow-big);
+  }
+  
+  .postpo-gallery-item:hover::after {
+    background:
+      linear-gradient(
+        to top,
+        rgba(47, 98, 95, .68),
+        rgba(47, 98, 95, .12)
+      );
+  }
+  
+  
+  /* =========================================================
+     PLAY GALERIA
+     ========================================================= */
+  
+  .postpo-gallery-link {
+    position: absolute;
+  
+    z-index: 4;
+  
+    left: 50%;
+    top: 50%;
+  
+    transform:
+      translate(-50%, -50%);
+  
+    color: var(--postpo-white);
+  
+    font-size: 55px;
+  
+    line-height: 1;
+  
+    opacity: .88;
+  
+    text-decoration: none;
+  
+    transition:
+      transform .3s ease,
+      opacity .3s ease,
+      color .3s ease;
+  }
+  
+  .postpo-gallery-link:hover {
+    color: var(--postpo-gold-light);
+  
+    opacity: 1;
+  
+    transform:
+      translate(-50%, -50%)
+      scale(1.12);
+  }
+  
+  
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+  
+  .postpo-footer {
+    background: #272522;
+  
+    color: var(--postpo-white);
+  }
+  
+  .postpo-footer-content {
+    padding: 85px 25px 40px;
+  
+    text-align: center;
+  }
+  
+  .postpo-footer-kicker {
+    margin: 0 0 12px;
+  
+    color: var(--postpo-gold-light);
+  
+    font-size: .75rem;
+    font-weight: 600;
+  
+    letter-spacing: .22em;
+  
+    text-transform: uppercase;
+  }
+  
+  .postpo-footer-title {
+    margin: 0 0 30px;
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: clamp(2.4rem, 5vw, 4rem);
+  
+    font-weight: 400;
+  
+    line-height: 1.1;
+  }
+  
+  
+  /* =========================================================
+     BOTÓ FOOTER
+     ========================================================= */
+  
+  .postpo-footer-button {
+    margin-bottom: 35px;
+  
+    border-color:
+      var(--postpo-teal);
+  }
+  
+  
+  /* =========================================================
+     SOCIAL FOOTER
+     ========================================================= */
+  
+  .postpo-footer-social {
+    margin: 15px 0 35px;
+  }
+  
+  
+  /* =========================================================
+     COPYRIGHT
+     ========================================================= */
+  
+  .postpo-copyright {
+    margin: 0;
+  
+    color: #aaa;
+  
+    font-family:
+      "Times New Roman",
+      Times,
+      serif;
+  
+    font-size: .75rem;
+  
+    line-height: 1.6;
+  }
+  
+  
+  /* =========================================================
+     TABLET
+     ========================================================= */
+  
+  @media (max-width: 900px) {
+  
+    .postpo-tools-grid {
+      grid-template-columns:
+        repeat(2, 1fr);
+    }
+  
+    .postpo-gallery {
+      grid-template-columns:
+        repeat(2, 1fr);
+    }
+  
+    .postpo-hero {
+      background-attachment: scroll;
+    }
+  
+  }
+  
+  
+  /* =========================================================
+     MÒBIL
+     ========================================================= */
+  
+  @media (max-width: 650px) {
+  
+  
+    /* ---------------------------------------------------------
+       HEADER
+       --------------------------------------------------------- */
+  
+    .postpo-page header {
+      position: relative;
+      z-index: 1000;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       NAVBAR
+       --------------------------------------------------------- */
+  
+    .postpo-page .navbar {
+      width: 100%;
+  
+      min-height: 82px;
+  
+      display: flex;
+  
+      flex-direction: row;
+  
+      align-items: center;
+  
+      justify-content: space-between;
+  
+      padding: 10px 18px;
+  
+      position: relative;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       LOGO
+       --------------------------------------------------------- */
+  
+    .postpo-page .logo-link {
+      width: auto;
+  
+      display: block;
+  
+      padding: 0;
+    }
+  
+    .postpo-page #Sb-logo {
+      width: 155px;
+  
+      max-width: 155px;
+  
+      height: auto;
+  
+      display: block;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       HAMBURGUESA
+       --------------------------------------------------------- */
+  
+    .postpo-page .menu-icon {
+      display: flex;
+  
+      width: 48px;
+      height: 48px;
+  
+      padding: 7px;
+      margin: 0;
+  
+      flex-direction: column;
+  
+      justify-content: center;
+      align-items: center;
+  
+      background: var(--postpo-cream);
+  
+      border:
+        1px solid var(--postpo-line);
+  
+      border-radius: 4px;
+  
+      cursor: pointer;
+  
+      position: relative;
+  
+      z-index: 1100;
+  
+      box-shadow:
+        0 3px 10px rgba(60, 42, 25, .10);
+    }
+  
+  
+    /* ---------------------------------------------------------
+       TRES LÍNIES
+       --------------------------------------------------------- */
+  
+    .postpo-page .menu-icon span {
+      display: block;
+  
+      width: 25px;
+      height: 2px;
+  
+      margin: 4px 0;
+  
+      background:
+        var(--postpo-teal-dark);
+  
+      transition:
+        transform .25s ease,
+        opacity .25s ease;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       MENÚ TANCAT
+       --------------------------------------------------------- */
+  
+    .postpo-page #MenuItems {
+      display: none;
+  
+      width: 100%;
+  
+      margin: 0;
+      padding: 0;
+  
+      list-style: none;
+  
+      flex-direction: column;
+  
+      background:
+        var(--postpo-cream);
+  
+      border-top:
+        1px solid var(--postpo-line);
+  
+      border-bottom:
+        1px solid var(--postpo-line);
+  
+      box-shadow:
+        0 8px 20px rgba(0, 0, 0, .12);
+  
+      position: absolute;
+  
+      left: 0;
+  
+      top: 82px;
+  
+      z-index: 1050;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       MENÚ OBERT
+       --------------------------------------------------------- */
+  
+    .postpo-page #MenuItems.open {
+      display: flex;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       ELEMENTS MENÚ
+       --------------------------------------------------------- */
+  
+    .postpo-page #MenuItems li {
+      width: 100%;
+  
+      margin: 0;
+      padding: 0;
+  
+      border-bottom:
+        1px solid var(--postpo-line);
+    }
+  
+    .postpo-page #MenuItems li:last-child {
+      border-bottom: none;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       ENLLAÇOS MENÚ
+       --------------------------------------------------------- */
+  
+    .postpo-page #MenuItems a {
+      display: block;
+  
+      width: 100%;
+  
+      padding: 17px 22px;
+  
+      color:
+        var(--postpo-ink);
+  
+      font-family:
+        "Times New Roman",
+        Times,
+        serif;
+  
+      font-size: .95rem;
+  
+      font-weight: 600;
+  
+      letter-spacing: .10em;
+  
+      text-transform: uppercase;
+  
+      background:
+        var(--postpo-cream);
+  
+      transition:
+        background-color .2s ease,
+        color .2s ease,
+        padding-left .2s ease;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       ACTIU
+       --------------------------------------------------------- */
+  
+    .postpo-page #MenuItems a.active {
+      color:
+        var(--postpo-teal-dark);
+  
+      background:
+        #f1e9dc;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       HOVER
+       --------------------------------------------------------- */
+  
+    .postpo-page #MenuItems a:hover,
+    .postpo-page #MenuItems a:focus {
+      color:
+        var(--postpo-teal-dark);
+  
+      background:
+        #f1e9dc;
+  
+      padding-left: 28px;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       TREIEM LA LÍNIA D'ESCRIPTORI
+       --------------------------------------------------------- */
+  
+    .postpo-page #MenuItems a::after {
+      display: none;
+    }
+  
+  
+    /* =========================================================
+       HERO
+       ========================================================= */
+  
+    .postpo-hero {
+      min-height: 590px;
+  
+      background-attachment: scroll;
+    }
+  
+    .postpo-hero-content {
+      padding: 65px 18px;
+    }
+  
+    .postpo-title {
+      font-size: 3.25rem;
+      line-height: 1;
+    }
+  
+    .postpo-description {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  
+  
+    /* =========================================================
+       SOCIAL
+       ========================================================= */
+  
+    .postpo-social {
+      gap: 8px;
+    }
+  
+    .postpo-social a {
+      width: 42px;
+      height: 42px;
+  
+      font-size: 16px;
+    }
+  
+  
+    /* =========================================================
+       CONTENIDOR
+       ========================================================= */
+  
+    .postpo-container {
+      width:
+        calc(100% - 35px);
+    }
+  
+  
+    /* =========================================================
+       INTRO
+       ========================================================= */
+  
+    .postpo-intro {
+      padding: 70px 0 55px;
+    }
+  
+    .postpo-heading {
+      font-size: 2.35rem;
+      line-height: 1.12;
+    }
+  
+    .postpo-text {
+      font-size: 1.08rem;
+      line-height: 1.7;
+  
+      text-align: left;
+    }
+  
+  
+    /* =========================================================
+       VIDEO
+       ========================================================= */
+  
+    .postpo-portfolio {
+      padding: 15px 0 70px;
+    }
+  
+    .postpo-feature-video {
+      aspect-ratio: 16 / 10;
+    }
+  
+    .postpo-play-button {
+      font-size: 58px;
+    }
+  
+  
+    /* =========================================================
+       EINES
+       ========================================================= */
+  
+    .postpo-tools {
+      padding: 70px 0 75px;
+    }
+  
+    .postpo-tools-grid {
+      width:
+        calc(100% - 35px);
+  
+      grid-template-columns: 1fr;
+  
+      gap: 22px;
+  
+      margin-top: 40px;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       TARGETA MÒBIL
+       --------------------------------------------------------- */
+  
+    .postpo-tool-card {
+      width: 100%;
+  
+      /*
+         Més alta per permetre veure
+         les fotografies verticals.
+      */
+  
+      min-height: 360px;
+  
+      height: auto;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       FOTO MÒBIL
+       --------------------------------------------------------- */
+  
+    .postpo-tool-card img {
+      width: 100%;
+  
+      height: 360px;
+  
+      object-fit: contain;
+  
+      object-position: center;
+  
+      background: #eee5d8;
+    }
+  
+  
+    /* =========================================================
+       TREBALLS
+       ========================================================= */
+  
+    .postpo-work {
+      padding: 70px 0 80px;
+    }
+  
+    .postpo-work-header {
+      margin-bottom: 38px;
+    }
+  
+    .postpo-work-title {
+      font-size: 3rem;
+    }
+  
+    .postpo-work-intro {
+      font-size: 1rem;
+    }
+  
+  
+    /* =========================================================
+       GALERIA
+       ========================================================= */
+  
+    .postpo-gallery {
+      grid-template-columns: 1fr;
+  
+      gap: 18px;
+    }
+  
+    .postpo-gallery-item {
+      min-height: 230px;
+    }
+  
+  
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+  
+    .postpo-footer-content {
+      padding:
+        65px 20px 30px;
+    }
+  
+  }
+  
+  
+  /* =========================================================
+     MÒBIL PETIT
+     ========================================================= */
+  
+  @media (max-width: 390px) {
+  
+    .postpo-title {
+      font-size: 2.75rem;
+    }
+  
+    .postpo-description {
+      font-size: 1rem;
+    }
+  
+    .postpo-heading {
+      font-size: 2.05rem;
+    }
+  
+    .postpo-social a {
+      width: 39px;
+      height: 39px;
+  
+      font-size: 15px;
+    }
+  
+    .postpo-button {
+      width: 100%;
+    }
+  
+    .postpo-hero-button {
+      width: 100%;
+    }
+  
+  
+    /* ---------------------------------------------------------
+       FOTOGRAFIES EINES EN MÒBIL PETIT
+       --------------------------------------------------------- */
+  
+    .postpo-tool-card {
+      min-height: 330px;
+    }
+  
+    .postpo-tool-card img {
+      height: 330px;
+    }
+  
+  }
+
+  /* =========================================================
+   MENÚ HAMBURGUESA - MÒBIL
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    #MenuItems {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 15px 0;
+      margin: 0;
+      background: #ffffff;
+      z-index: 9999;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    }
+  
+    #MenuItems.active {
+      display: block;
+    }
+  
+    #MenuItems li {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #MenuItems li a {
+      display: block;
+      padding: 15px 20px;
+      color: #292521;
+      text-decoration: none;
+    }
+  
+    #MenuItems li a:hover,
+    #MenuItems li a.active {
+      color: #397c78;
+    }
+  
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      padding: 10px;
+      z-index: 10000;
+    }
+  
+    .menu-icon span {
+      display: block;
+      width: 28px;
+      height: 3px;
+      background: #292521;
+      transition: all .3s ease;
+    }
+  
+  }

@@ -1,540 +1,994 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postproducción</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<html lang="ca">
 
-    <link
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sandra Barrachina Films | Escriptora i Postproducció</title>
+
+  <!-- CSS GENERAL DE LA WEB -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Bootstrap -->
+  <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS EXCLUSIU DE POSTPRODUCCIÓ -->
+  <link rel="stylesheet" href="/css/StylesPostpo.css">
+
+  <!-- VenoBox -->
+  <link
     rel="stylesheet"
-    href="./venobox/venobox.css"
+    href="/venobox/venobox.css"
     type="text/css"
     media="screen"
-  />
+  >
 </head>
-<body>
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light" >
-        
-        <img src="./img/logoSbarrachina.png" id="Sb-logo">
-        
-        </a>
-        
-
-        <img src="./img/menu.png" class="menu-icon" onclick="menutoggle()">
-     <ul id="MenuItems">
-        <li class="nav-item">
-            <a href="/index.html">BIENVENIDOS</a>
-        </li>
-    
-        
-        <li class="nav-item ">
-            <a href="/pospo.html">POSTPRODUCCIÓN</a>
-        </li>
-
-        <li class="nav-item ">
-            <a href="/Eventos.html">EVENTOS</a>
-        </li>
-
-        <li class="nav-item ">
-          <a href="videobooks.html">VIDEOBOOKS</a>
-        
-        </li>
-        <li class="nav-item ">
-            <a href="/escritora.html">ESCRITORA</a>
-        </li>
-        <li class="nav-item ">
-            <a href="/web.html"> DISEÑO WEB</a>
-        </li>
-        <li class="nav-item ">
-            <a href="/Contacto.html">CONTACTO</a>
-        </li>
-     </ul>
-    </nav>
-   </header>
-    
-    
-    <main>
-        <div class="container-fluid p-0">
-            <div class="site-content">
-                <div class="d-flex justify-content-center">
-                    <div class="d-flex flex-column">
-                        <h1 class="site-title">Post Producción para tus Proyectos</h1>
-                        <p class="site-desc"> ¿No sabes cómo? Me encargaré de darle forma a tus películas.
 
 
-                          <div class="social movil-social"  style="margin: 2%;">
+<body class="postpo-page">
+
+<!-- =========================================================
+     CAPÇALERA
+     ========================================================= -->
+
+<header class="postpo-header">
+
+  <nav class="navbar postpo-navbar">
+
+    <a href="/index.html" class="logo-link postpo-logo-link">
+      <img
+        src="./img/2026/logoSandra2026.png"
+        id="Sb-logo"
+        class="postpo-logo"
+        alt="Sandra Barrachina"
+      >
+    </a>
+
+    <!-- MENÚ MÒBIL -->
+    <button
+      class="menu-icon postpo-menu-icon"
+      id="menuToggle"
+      aria-label="Obrir menú"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENÚ -->
+    <ul id="MenuItems" class="postpo-menu">
+
+      <li>
+        <a href="/index.html">INICI</a>
+      </li>
+
+      <li>
+        <a class="active" href="/pospo.html">POSTPRODUCCIÓ</a>
+      </li>
+
+      <li>
+        <a href="/escritora.html">ESCRIPTORA</a>
+      </li>
+
+      <li>
+        <a href="/Contacto.html">CONTACTE</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</header>
 
 
-                          <div class="d-flex flex-row justify-content-center inicio-social">
-                            <a href="https://www.linkedin.com/in/sandra-barrachina-00569630/" target="_blank"><i class="fa fa-linkedin m-2"></i></a>
-                          <a href="https://www.youtube.com/c/SandraBarrachina" target="_blank"><i class="fa fa-youtube m-2"></i></a>
-                          <a href="https://www.instagram.com/sbarrachinafilms/" target="_blank"><i class="fa fa-instagram m-2"></i></a>
-                          <a href="https://www.facebook.com/profile.php?id=100063769971904" target="_blank"><i class="fa fa-facebook m-2"></i></a>
-                          <a href="https://github.com/Sbarrachina" target="_blank"><i class="fa fa-github m-2"></i></a>
-                          <a href="https://twitter.com/Sbarrachinafilm" target="_blank"><i class="fa fa-twitter m-2"></i></a>
-                          <a href="https://www.flickr.com/photos/120700302@N02//" target="_blank"><i class="fa fa-flickr m-2"></i></a>
-                          
+<!-- =========================================================
+     CONTINGUT PRINCIPAL
+     ========================================================= -->
+
+<main class="postpo-main">
 
 
-                          </div>
-                        
-                        <div class="d-flex flex-row">
-                           <a href="/Contacto.html" >  <input type="button" value="CONTACTA" class="btn site-btn2 px-4 py-3 mr-4 btn-light" id="boton-2"> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section-1">
-            <div class="container text-center">
-                <h1 class="heading-1 text-1">Por qué tu obra necesita una postproducción
+  <!-- =======================================================
+       HERO
+       ======================================================= -->
+
+  <section class="postpo-hero">
+
+    <div class="postpo-hero-overlay"></div>
+
+    <div class="postpo-hero-content">
+
+      <h1 class="postpo-title">
+        Postproducció<br>
+        per als teus projectes
+      </h1>
+
+      <p class="postpo-description">
+        No saps com? Me n'encarregaré de donar forma a les teves pel·lícules.
+      </p>
 
 
+      <!-- XARXES SOCIALS -->
 
-                </h1>
-                <p class="para-1 pospotext">Has grabado un largometraje, cortometraje o otro material, y no tienes los medios para poder hacer la post producción.
+      <div class="postpo-social postpo-hero-social">
 
-                    Te doy la solución. Me encargo del montaje y del retoque de imagen, dándole un toque personal al color. 
-
-                    Sin olvidarme del diseño sonoro, adaptado al género del proyecto. Cerrar la mezcla de sonido con el mejor resultado. Contáctame y lo haré posible.
-                </p>
-
-                <!-- Video portofolio  -->
-
-<div
-class="video"
-style="background-image: url(/MisImg/videoPortofolio.png)"
->
-<a
-  class="venobox"
-  data-autoplay="true"
-  data-vbtype="video"
-  href="https://www.youtube.com/watch?v=CDXqHqIszwY"
-  data-gall="myGallery"
-  ><i class="fas fa-play-circle"></i
-></a>
-</div>
-
-<div class="container text-center">
-  <h1 class="heading-1 text-1">Herramientas que Impulsan mi Creatividad
-
-
-
-  </h1>
-  <p class="para-1">¡Bienvenidos al mundo de la posproducción audiovisual!
-     Como editora, colorista y experta en sonido, utilizo una combinación de
-      herramientas digitales para llevar mis proyectos al siguiente nivel. 
-      Con programas especializados, puedo transformar material bruto en obras maestras finales.
-       Aquí les presento algunas de mis poderosas herramientas de trabajo. ¡Descubran cómo estas
-        herramientas me ayudan a hacer mágia!
-  </p>
-
-</div>
-<!-- video -->
- </div>
-
-
-    
-    <main>
-  
-  
-    <!-- PROGRAMAS POSPO FOTOS -->
-    
-    <section class="campus">
-    
-    
-    <div class="row">
-        <div class="campus-col">
-            <img src="./img/london.png">
-            <div class="layer">
-                <h3>EDICIÓN</h3>
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="./MisImg/finalCut.png">
-            <div class="layer">
-                <h3>EDICIÓN</h3>
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="./MisImg/2davinci.png">
-            <div class="layer">
-                <h3>COLORISTA</h3>
-            </div>
-        </div>
-
-        <div class="campus-col">
-            <img src="./MisImg/protools.png">
-            <div class="layer">
-                <h3>SONIDO</h3>
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="./img/newyork.png">
-            <div class="layer">
-                <h3>FOTOGRAFÍA</h3>
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="./img/washington.png">
-            <div class="layer">
-                <h3>EFECTOS</h3>
-            </div>
-        </div>
-    
-    
-    </div>
-    
-    </section>
-    
-
-    <!-- TRABAJOS  -->
-
- 
-<!-- section videos -->
-
-<section class="content__section"  >
-    <div class="playlist__one">
-      <h2 class="playlist__title">TRABAJOS</h2>
-      <div class="videos" id="films">
-        <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/matalos.png)"
+        <a
+          href="https://www.linkedin.com/in/sandra-barrachina-00569630/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
+          <i class="fa fa-linkedin"></i>
+        </a>
+
+        <a
+          href="https://www.youtube.com/c/SandraBarrachina"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+        >
+          <i class="fa fa-youtube"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/sbarrachinafilms/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=100063769971904"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fa fa-facebook"></i>
+        </a>
+
+        <a
+          href="https://github.com/Sbarrachina"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="fa fa-github"></i>
+        </a>
+
+        <a
+          href="https://twitter.com/Sbarrachinafilm"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <i class="fa fa-twitter"></i>
+        </a>
+
+        <a
+          href="https://www.flickr.com/photos/120700302@N02//"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Flickr"
+        >
+          <i class="fa fa-flickr"></i>
+        </a>
+
+      </div>
+
+
+      <!-- BOTÓ CONTACTE -->
+
+      <div class="postpo-hero-button">
+
+        <a href="/Contacto.html" class="postpo-button postpo-button-contact">
+          CONTACTA
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       INTRODUCCIÓ
+       ======================================================= -->
+
+  <section class="postpo-intro">
+
+    <div class="postpo-container postpo-text-center">
+
+      <p class="postpo-kicker">
+        POSTPRODUCCIÓ AUDIOVISUAL
+      </p>
+
+      <h2 class="postpo-heading">
+        Per què la teva obra necessita una postproducció
+      </h2>
+
+      <p class="postpo-text">
+        Has gravat un llargmetratge, curtmetratge o altre material,
+        i no tens els mitjans per poder fer la postproducció.
+        Et dono la solució. M'encarrego del muntatge i del retoc
+        d'imatge, donant-li un toc personal al color.
+        Sense oblidar-me del disseny sonor, adaptat al gènere
+        del projecte. Tanco la mescla de so amb el millor resultat.
+        Contacta amb mi i ho faré possible.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       VÍDEO PORTFOLIO
+       ======================================================= -->
+
+  <section class="postpo-portfolio">
+
+    <div class="postpo-container">
+
+      <div
+        class="postpo-feature-video"
+        style="background-image: url('./MisImg/videoPo');"
+      >
+
+        <a
+          class="venobox postpo-play-button"
+          data-autoplay="true"
+          data-vbtype="video"
+          href="https://www.youtube.com/watch?v=CDXqHqIszwY"
+          data-gall="myGallery"
+          aria-label="Veure vídeo de portfolio"
+        >
+          <i class="fa fa-play-circle"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       EINES
+       ======================================================= -->
+
+  <section class="postpo-tools">
+
+    <div class="postpo-container postpo-text-center">
+
+      <p class="postpo-kicker">
+        EINES DE TREBALL
+      </p>
+
+      <h2 class="postpo-heading">
+        Eines que impulsen la meva creativitat
+      </h2>
+
+      <p class="postpo-text">
+        Benvinguts al món de la postproducció audiovisual!
+        Com a editora, colorista i experta en so, utilitzo una
+        combinació d'eines digitals per portar els meus projectes
+        al següent nivell. Amb programes especialitzats, puc
+        transformar material en brut en obres finals.
+        Aquestes són algunes de les meves principals eines de treball.
+      </p>
+
+    </div>
+
+
+    <!-- PROGRAMARI -->
+
+    <div class="postpo-tools-grid">
+
+
+      <article class="postpo-tool-card">
+
+        <img
+          src="./img/london.png"
+          alt="Eines d'edició"
+        >
+
+        <div class="postpo-tool-overlay">
+          <h3>EDICIÓ</h3>
+        </div>
+
+      </article>
+
+
+      <article class="postpo-tool-card">
+
+        <img
+          src="./MisImg/finalCut.png"
+          alt="Final Cut Pro"
+        >
+
+        <div class="postpo-tool-overlay">
+          <h3>EDICIÓ</h3>
+        </div>
+
+      </article>
+
+
+      <article class="postpo-tool-card">
+
+        <img
+          src="./MisImg/2davinci.png"
+          alt="DaVinci Resolve"
+        >
+
+        <div class="postpo-tool-overlay">
+          <h3>COLORISTA</h3>
+        </div>
+
+      </article>
+
+
+      <article class="postpo-tool-card">
+
+        <img
+          src="./MisImg/protools.png"
+          alt="Pro Tools"
+        >
+
+        <div class="postpo-tool-overlay">
+          <h3>SO</h3>
+        </div>
+
+      </article>
+
+
+      <article class="postpo-tool-card">
+
+        <img
+          src="./img/newyork.png"
+          alt="Fotografia"
+        >
+
+        <div class="postpo-tool-overlay">
+          <h3>FOTOGRAFIA</h3>
+        </div>
+
+      </article>
+
+
+      <article class="postpo-tool-card">
+
+        <img
+          src="./img/washington.png"
+          alt="Efectes visuals"
+        >
+
+        <div class="postpo-tool-overlay">
+          <h3>EFECTES</h3>
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       TREBALLS
+       ======================================================= -->
+
+  <section class="postpo-work">
+
+    <div class="postpo-container">
+
+      <div class="postpo-work-header">
+
+        <p class="postpo-kicker">
+          PORTFOLIO
+        </p>
+
+        <h2 class="postpo-work-title">
+          TREBALLS
+        </h2>
+
+        <p class="postpo-work-intro">
+          Una selecció de projectes de muntatge, color,
+          so i postproducció audiovisual.
+        </p>
+
+      </div>
+
+
+      <!-- GALERIA -->
+
+      <div class="postpo-gallery" id="films">
+
+
+        <!-- 01 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/matalos.png');"
+        >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=PuzswlKFu6Q"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
+            aria-label="Veure Mátalos"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
 
-        <div
-        class="video galeria"
-        style="background-image: url(./MisImg/trabajos/Cartas\ a\ la\ hija.png)"
-      >
-        <a
-          class="venobox"
-          data-autoplay="true"
-          data-vbtype="video"
-          href="https://www.youtube.com/watch?v=ETGMM2We0pA"
-          data-gall="myGallery"
-          ><i class="fas fa-play-circle"></i
-        ></a>
-      </div>
+        </article>
 
-        <div
-          class="video galeria "
-          style="background-image: url(./MisImg/trabajos/con\ el\ agua\ al\ cuello.png)"
+
+        <!-- 02 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/Cartas a la hija.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=ETGMM2We0pA"
+            data-gall="myGallery"
+            aria-label="Veure Cartas a la hija"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 03 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/con el agua al cuello.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=jy-KSMLW0JU"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
+            aria-label="Veure Con el agua al cuello"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
 
-        <div
-          class="video galeria "
-          style="background-image: url(./MisImg/trabajos/tina.png)"
+        </article>
+
+
+        <!-- 04 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/tina.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=PrVhh6-tEco"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/Ok_MadreReflejo.png)"
+            aria-label="Veure Tina"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 05 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/Ok_MadreReflejo.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=og63WWnadXA&list=PL557B208343D87819&index=2"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/La\ Otra_post_po.png)"
+            aria-label="Veure Ok Madre Reflejo"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 06 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/La Otra_post_po.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=2xpMxRgZS5Y&list=PL557B208343D87819&index=4"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/Ciudadanos_post_po.png)"
+            aria-label="Veure La Otra"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 07 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/Ciudadanos_post_po.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=9OwxosO-xVo&list=PL557B208343D87819&index=3"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        
-        <div
-        class="video galeria"
-        style="background-image: url(./MisImg/trabajos/intangible.png)"
-      >
-        <a
-          class="venobox"
-          data-autoplay="true"
-          data-vbtype="video"
-          href="https://www.youtube.com/watch?v=AbmIjdvpplU"
-          data-gall="myGallery"
-          ><i class="fas fa-play-circle"></i
-        ></a>
-      </div>
+            aria-label="Veure Ciudadanos"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
 
-      <!-- seccion dos videos -->
+        </article>
 
-      <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/Vestigis_post_po.png)"
+
+        <!-- 08 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/intangible.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=AbmIjdvpplU"
+            data-gall="myGallery"
+            aria-label="Veure Intangible"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 09 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/Vestigis_post_po.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=oCZD67QjLCQ"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
+            aria-label="Veure Vestigis"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
 
-        <div
-          class="video galeria "
-          style="background-image: url(./MisImg/trabajos/SoloEstan\ Elllos_post_po.png)"
+        </article>
+
+
+        <!-- 10 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/SoloEstan Elllos_post_po.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
-            href="https://www.youtube.com/watch?v=bJ1MsmYijSI&list=PL557B208343D87819&index=14"
+            href="https://youtu.be/bJ1MsmYijSI?si=w8jKBfaytEWo5_wt"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/transtornoMental_post_po.png)"
+            aria-label="Veure Solo Están Ellos"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 11 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/transtornoMental_post_po.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=GTRgBLgSI10&list=PL557B208343D87819&index=12"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/ficcionReal.png)"
+            aria-label="Veure Trastorno Mental"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 12 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/ficcionReal.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://www.youtube.com/watch?v=LK1fwcS_osY"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        <div
-          class="video galeria"
-          style="background-image: url(./MisImg/trabajos/Riu.png)"
+            aria-label="Veure Ficción Real"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 13 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/Riu.png');"
         >
+
           <a
-            class="venobox"
+            class="venobox postpo-gallery-link"
             data-autoplay="true"
             data-vbtype="video"
             href="https://youtu.be/XrbQfgEb9xI"
             data-gall="myGallery"
-            ><i class="fas fa-play-circle"></i
-          ></a>
-        </div>
-        
-        <div
-        class="video galeria"
-        style="background-image: url(./MisImg/trabajos/tiooscar.png)"
-      >
-        <a
-          class="venobox"
-          data-autoplay="true"
-          data-vbtype="video"
-          href="https://www.youtube.com/watch?v=ZktWW6UXygA&list=PL557B208343D87819&index=18"
-          data-gall="myGallery"
-          ><i class="fas fa-play-circle"></i
-        ></a>
+            aria-label="Veure Riu"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 14 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/tiooscar.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=ZktWW6UXygA&list=PL557B208343D87819&index=18"
+            data-gall="myGallery"
+            aria-label="Veure Tío Oscar"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 15 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/Cubal_post_po.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=KuduwYEwV1c"
+            data-gall="myGallery"
+            aria-label="Veure Cubal"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 16 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/richi-coor.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=dkz-hd6UFWQ&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=10"
+            data-gall="myGallery"
+            aria-label="Veure Richi"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 17 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/Nescafe-spot.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=HjNuY5o9pm4&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=18&t=4s"
+            data-gall="myGallery"
+            aria-label="Veure Nescafé"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 18 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/claromusica.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=1bCU-uJuZS8&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=17"
+            data-gall="myGallery"
+            aria-label="Veure Claro Música"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 19 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/videoclip.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=zUpsecqfoKA&list=PL557B208343D87819&index=7"
+            data-gall="myGallery"
+            aria-label="Veure Videoclip"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
+
+        <!-- 20 -->
+
+        <article
+          class="postpo-gallery-item"
+          style="background-image: url('./MisImg/trabajos/zuri.png');"
+        >
+
+          <a
+            class="venobox postpo-gallery-link"
+            data-autoplay="true"
+            data-vbtype="video"
+            href="https://www.youtube.com/watch?v=T_epd_bSDCo&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=9&t=7s"
+            data-gall="myGallery"
+            aria-label="Veure Zuri"
+          >
+            <i class="fa fa-play-circle"></i>
+          </a>
+
+        </article>
+
       </div>
 
-      
-
-<!-- Seccion 3  -->
-<div
-class="video galeria"
-style="background-image: url(./MisImg/trabajos/Cubal_post_po.png)"
->
-<a
-  class="venobox"
-  data-autoplay="true"
-  data-vbtype="video"
-  href="https://www.youtube.com/watch?v=KuduwYEwV1c"
-  data-gall="myGallery"
-  ><i class="fas fa-play-circle"></i
-></a>
-</div>
-
-
-<div
-class="video galeria"
-style="background-image: url(./MisImg/trabajos/richi-coor.png)"
->
-<a
-  class="venobox"
-  data-autoplay="true"
-  data-vbtype="video"
-  href="https://www.youtube.com/watch?v=dkz-hd6UFWQ&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=10"
-  data-gall="myGallery"
-  ><i class="fas fa-play-circle"></i
-></a>
-</div>
-
-<div
-class="video galeria "
-style="background-image: url(./MisImg/trabajos/Nescafe-spot.png)"
->
-<a
-  class="venobox"
-  data-autoplay="true"
-  data-vbtype="video"
-  href="https://www.youtube.com/watch?v=HjNuY5o9pm4&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=18&t=4s"
-  data-gall="myGallery"
-  ><i class="fas fa-play-circle"></i
-></a>
-
-</div>
-
-
-<div
-class="video galeria"
-style="background-image: url(./MisImg/trabajos/claromusica.png)"
->
-<a
-  class="venobox"
-  data-autoplay="true"
-  data-vbtype="video"
-  href="https://www.youtube.com/watch?v=1bCU-uJuZS8&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=17"
-  data-gall="myGallery"
-  ><i class="fas fa-play-circle"></i
-></a>
-</div>
-<div
-class="video galeria"
-style="background-image: url(./MisImg/trabajos/videoclip.png)"
->
-<a
-  class="venobox"
-  data-autoplay="true"
-  data-vbtype="video"
-  href="https://www.youtube.com/watch?v=zUpsecqfoKA&list=PL557B208343D87819&index=7"
-  data-gall="myGallery"
-  ><i class="fas fa-play-circle"></i
-></a>
-</div>
-
-
-<div
-class="video galeria"
-style="background-image: url(./MisImg/trabajos/zuri.png)"
->
-<a
-  class="venobox"
-  data-autoplay="true"
-  data-vbtype="video"
-  href="https://www.youtube.com/watch?v=T_epd_bSDCo&list=PL48Wr_AYvOzqzlp5Nl8ubWOMs9onqPnsH&index=9&t=7s"
-  data-gall="myGallery"
-  ><i class="fas fa-play-circle"></i
-></a>
-</div>
-
-
-
-      </div>
     </div>
 
-    </div>
   </section>
-</div>
-
-    </main>
-    
-    
-    <footer>
-        <div class="section-5 text-center">
-            <h4 style="margin-top: 5%;" id="contactame">No te lo pienses más</h4>
-            
-            <div class="form-inline justify-content-center">
-               <a href="/Contacto.html"> <input type="button" value="CONTACTA" class="btn btn-danger px-4 py-2" id="boton-cv"> </a>               
-            </div>
-            <div class="social" style="margin: 5%;">
-                   <div class="d-flex flex-row justify-content-center">
-                    <a href="https://www.linkedin.com/in/sandra-barrachina-00569630/" target="_blank"><i class="fa fa-linkedin m-2"></i></a>
-                    <a href="https://www.youtube.com/c/SandraBarrachina" target="_blank"><i class="fa fa-youtube m-2"></i></a>
-                    <a href="https://www.instagram.com/sbarrachinafilms/" target="_blank"><i class="fa fa-instagram m-2"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100063769971904" target="_blank"><i class="fa fa-facebook m-2"></i></a>
-                    <a href="https://github.com/Sbarrachina" target="_blank"><i class="fa fa-github m-2"></i></a>
-                    <a href="https://twitter.com/Sbarrachinafilm" target="_blank"><i class="fa fa-twitter m-2"></i></a>
-                    <a href="https://www.flickr.com/photos/120700302@N02//" target="_blank"><i class="fa fa-flickr m-2"></i></a>
-                    
-                   </div>                    
-                </div>
-                
-            <h5 style="color: rgb(24, 25, 25);"> ©2023 All rights reserved | made by SBarrachina Code  <i class="fa fa-heart-o"></i></h5>
-          </div>
-    </footer>     
-    <script src="./servicios-2.js"></script>   
 
 
-    <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
+</main>
 
-    <script type="text/javascript" src="./venobox/venobox.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".venobox").venobox({
-          closeColor: "#f4f4f4",
-          spinColor: "#f4f4f4",
-          arrowsColor: "#f4f4f4",
-          closeBackground: "#17191D",
-          overlayColor: "rgba(23,25,29,0.8)",
-        });
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="postpo-footer">
+
+  <section class="postpo-footer-content">
+
+    <p class="postpo-footer-kicker">
+      POSTPRODUCCIÓ AUDIOVISUAL
+    </p>
+
+    <h2 class="postpo-footer-title">
+      No t'ho pensis més
+    </h2>
+
+    <a href="/Contacto.html" class="postpo-button postpo-footer-button">
+      CONTACTA
+    </a>
+
+
+    <!-- XARXES -->
+
+    <div class="postpo-social postpo-footer-social">
+
+      <a
+        href="https://www.linkedin.com/in/sandra-barrachina-00569630/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="fa fa-linkedin"></i>
+      </a>
+
+      <a
+        href="https://www.youtube.com/c/SandraBarrachina"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="YouTube"
+      >
+        <i class="fa fa-youtube"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/sbarrachinafilms/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <i class="fa fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://www.facebook.com/profile.php?id=100063769971904"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+      >
+        <i class="fa fa-facebook"></i>
+      </a>
+
+      <a
+        href="https://github.com/Sbarrachina"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <i class="fa fa-github"></i>
+      </a>
+
+      <a
+        href="https://twitter.com/Sbarrachinafilm"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Twitter"
+      >
+        <i class="fa fa-twitter"></i>
+      </a>
+
+      <a
+        href="https://www.flickr.com/photos/120700302@N02//"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Flickr"
+      >
+        <i class="fa fa-flickr"></i>
+      </a>
+
+    </div>
+
+
+    <p class="postpo-copyright">
+      ©2023 All rights reserved | made by SBarrachina Code
+      <i class="fa fa-heart-o"></i>
+    </p>
+
+  </section>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script src="./servicios-2.js"></script>
+
+<script src="./jquery/jquery-3.6.0.min.js"></script>
+
+<script src="./venobox/venobox.min.js"></script>
+
+
+<script>
+  $(document).ready(function () {
+
+    $(".venobox").venobox({
+      closeColor: "#f4f4f4",
+      spinColor: "#f4f4f4",
+      arrowsColor: "#f4f4f4",
+      closeBackground: "#17191D",
+      overlayColor: "rgba(23,25,29,0.8)"
+    });
+
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  
+    const menuToggle = document.getElementById("menuToggle");
+    const menuItems = document.getElementById("MenuItems");
+  
+    if (menuToggle && menuItems) {
+  
+      menuToggle.addEventListener("click", function () {
+  
+        menuItems.classList.toggle("active");
+  
+        menuToggle.classList.toggle("active");
+  
       });
-    </script>
+  
+    }
+  
+  });
+  </script>
+
+
 </body>
 </html>
