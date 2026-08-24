@@ -1,0 +1,491 @@
+
+/* =========================================================
+   CONTACTE
+   CSS EXCLUSIU DE LA PÀGINA DE CONTACTE
+========================================================= */
+
+
+/* =========================================================
+   PÀGINA
+========================================================= */
+
+.contact-page {
+    width: 100%;
+    background: #f7f5f1;
+    color: #202020;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.contact-hero {
+    width: 100%;
+    min-height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f5f1;
+
+    text-align: center;
+
+    padding: 80px 20px 70px;
+}
+
+.contact-hero-inner {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-kicker {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 600;
+
+    color: #777;
+}
+
+.contact-hero h1 {
+    margin: 0 0 24px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 100px;
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    color: #252525;
+}
+
+.contact-hero p {
+    width: 100%;
+    max-width: none;
+
+    margin: 0 auto;
+
+    font-size: 25px;
+    line-height: 1.6;
+
+    color: #666;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SECCIÓ CONTACTE
+========================================================= */
+
+.contact-section {
+    width: 100%;
+
+    padding: 80px 25px 110px;
+
+    background: #ffffff;
+}
+
+.contact-wrapper {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   TEXT INTRODUCTORI
+========================================================= */
+
+.contact-intro {
+    padding-top: 15px;
+}
+
+.contact-small-title {
+    display: block;
+
+    margin-bottom: 22px;
+
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+
+    color: #888;
+}
+
+.contact-intro h2 {
+    margin: 0 0 28px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: #242424;
+}
+
+.contact-intro p {
+    width: 100%;
+    max-width: 430px;
+
+    margin: 0;
+
+    font-size: 25px;
+    line-height: 1.8;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   FORMULARI
+========================================================= */
+
+.contact-col {
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group-custom {
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+.form-group-custom label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d8d5d0;
+    border-radius: 0;
+
+    background: #faf9f7;
+
+    padding: 15px 17px;
+
+    font-family: inherit;
+    font-size: 17px;
+
+    color: #292929;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-form input {
+    height: 54px;
+}
+
+.contact-form textarea {
+    min-height: 170px;
+
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #777;
+
+    background: #ffffff;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   BOTÓ
+========================================================= */
+
+.contact-submit {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    min-width: 220px;
+
+    margin-top: 5px;
+
+    padding: 16px 24px;
+
+    border: 1px solid #242424;
+
+    background: #242424;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.contact-submit span {
+    font-size: 20px;
+
+    line-height: 0;
+
+    transition: transform 0.25s ease;
+}
+
+.contact-submit:hover {
+    background: transparent;
+
+    color: #242424;
+
+    transform: translateY(-2px);
+}
+
+.contact-submit:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.contact-footer {
+    width: 100%;
+
+    padding: 45px 20px 35px;
+
+    text-align: center;
+
+    background: #f7f5f1;
+}
+
+.contact-footer .social {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 0 25px;
+}
+
+.contact-footer .social a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    color: #555;
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.contact-footer .social a:hover {
+    color: #ffffff;
+
+    background: #242424;
+
+    transform: translateY(-3px);
+}
+
+.contact-footer .social i {
+    margin: 0;
+
+    font-size: 31px;
+}
+
+.contact-footer p {
+    margin: 0;
+
+    font-size: 13px;
+    letter-spacing: 0.5px;
+
+    color: #777;
+}
+
+.contact-footer p .fa-heart-o {
+    margin-left: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        max-width: 700px;
+    }
+
+    .contact-intro {
+        padding-top: 0;
+    }
+
+    .contact-intro p {
+        max-width: 600px;
+    }
+
+}
+
+
+/* =========================================================
+   MÒBIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        min-height: 280px;
+
+        padding: 65px 20px 55px;
+    }
+
+    .contact-hero h1 {
+        font-size: 50px;
+    }
+
+    .contact-hero p {
+        font-size: 18px;
+
+        line-height: 1.7;
+
+        white-space: normal;
+    }
+
+    .contact-section {
+        padding: 60px 20px 80px;
+    }
+
+    .contact-wrapper {
+        gap: 45px;
+    }
+
+    .contact-intro h2 {
+        font-size: 38px;
+    }
+
+    .contact-intro p {
+        font-size: 18px;
+
+        line-height: 1.75;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 17px;
+    }
+
+    .contact-submit {
+        width: 100%;
+    }
+
+    .contact-footer {
+        padding: 35px 15px 30px;
+    }
+
+    .contact-footer .social {
+        flex-wrap: wrap;
+
+        gap: 6px;
+
+        margin-bottom: 20px;
+    }
+
+    .contact-footer .social a {
+        width: 44px;
+        height: 44px;
+    }
+
+    .contact-footer .social i {
+        font-size: 20px;
+    }
+
+    .contact-footer p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   MÒBIL PETIT
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .contact-hero h1 {
+        font-size: 44px;
+    }
+
+    .contact-intro h2 {
+        font-size: 34px;
+    }
+
+}

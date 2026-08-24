@@ -1,548 +1,829 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ca">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escritora</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/videobooks.css">
 
-    <!-- links carousel -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+  <meta charset="UTF-8">
 
-   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sandra Barrachina | Escriptora</title>
+
+  <!-- CSS GENERAL DE LA WEB -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Bootstrap -->
+  <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS EXCLUSIU D'ESCRIPTORA -->
+  <link rel="stylesheet" href="/css/escriptora.css">
+
 </head>
+
+
 <body>
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light" >
-        
-        <img src="./img/logoSbarrachina.png" id="Sb-logo">
-        
-        </a>
-        
-
-        <img src="./img/menu.png" class="menu-icon" onclick="menutoggle()">
-     <ul id="MenuItems">
-        <li class="nav-item">
-            <a href="/index.html">BIENVENIDOS</a>
-        </li>
-    
-        
-        <li class="nav-item ">
-            <a href="/pospo.html">POSTPRODUCCIÓN</a>
-        </li>
-
-        <li class="nav-item ">
-            <a href="/Eventos.html">EVENTOS</a>
-        </li>
-
-        <li class="nav-item ">
-            <a href="videobooks.html">VIDEOBOOKS</a>
-        
-        </li>
-        <li class="nav-item ">
-            <a href="/escritora.html">ESCRITORA</a>
-        </li>
-        <li class="nav-item ">
-            <a href="/web.html"> DISEÑO WEB</a>
-        </li>
-        <li class="nav-item ">
-            <a href="/Contacto.html">CONTACTO</a>
-        </li>
-     </ul>
-    </nav>
-   </header>
-    
-    
-    <main>
-       
-
-    <!------------------------ Site Title ---------------------->
-
-    <section class="site-title5  ">
-      <div class="site-background" data-aos="fade-up" data-aos-delay="100">
-          <h1>Los Libros abren la ventana de la imaginación </h1>
-
-          <h3 class="site-title-e"> Escritora <a href="https://www.amazon.es/Sra-SANDRA-BARRACHINA-ARRIBAS/e/B07R7PMKKQ/ref=aufs_dp_fta_dsk" target="_blank">
-            <i class="fab fa-amazon"></i><span class="amazon-text">Books</span>
-          </a>
-          
-
-          </h3>
-
-      
-      </div>
-
-  </section>
-
-  <p class="para-e">
-
-    Todo comenzó por crear un blog, donde poder darme a conocer. Luego me adentré en el mundo de los relatos. Contando pequeñas historias llenas de imaginación y dando mi toque personal. Con la intención de seguir creciendo como escritora. Disfrutar haciéndolo y con retos cada vez mayores.
-
-  </p> 
-
-        
-      <!-- Slider portadas libros -->
-      <section class="slider-portadas">
-        <img id="portada_relatos" class="portada" src="/MisImg/portadas libro/portada_relatos.jpg" alt="">
-        <img id="portada_kasicasting" class="portada" src="/MisImg/portadas libro/portada_kasicasting.jpg" alt="">
-        <img id="portada_ebook_julia" class="portada" src="/MisImg/portadas libro//portada ebook julia .jpg" alt="">
-        <img id="portada_ebook_relatos2" class="portada" src="/MisImg/portadas libro/portada_ebook_relatos2.png" alt="">
-      </section>
 
 
-      
-      <div id="detalle-libro">
-        <button id="cerrar-detalle" onclick="cerrarDetalle()">Cerrar</button>
-        <button id="anterior" onclick="anteriorLibro()"><i class="fas fa-arrow-left"></i></button>
-      <button id="siguiente" onclick="siguienteLibro()"><i class="fas fa-arrow-right"></i></button>
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-        <h2 id="titulo"></h2>
-        <div class="descripcion-container">
-        <p id="descripcion"></p>
-         </div>
-        <img id="imagen" src="" alt="">
-        <button id="botonDetalle" onclick="irAmazon()" >Ir a Amazon</button>
+<header class="postpo-header">
 
-        <p id="anio"></p>
+  <nav class="navbar postpo-navbar">
 
-      </div>
-      
-      <script>
-        fetch("/books.json")
-          .then(response => response.json())
-          .then(data => {
-            const libros = data.libros;
-      
-            // Agregar evento de click a cada imagen del slider
+    <a href="/index.html" class="logo-link postpo-logo-link">
 
-libros.forEach(libro => {
-const imagen = document.getElementById(libro.id);
-imagen.addEventListener("click", () => {
+      <img
+        src="./img/2026/logoSandra2026.png"
+        id="Sb-logo"
+        class="postpo-logo"
+        alt="Sandra Barrachina"
+      >
 
-// Mostrar los datos del libro en el detalle
-
-document.getElementById("titulo").textContent = libro.titulo;
-document.getElementById("descripcion").textContent = libro.descripcion;
-document.getElementById("imagen").src = libro.imagen;
+    </a>
 
 
-        // Mostrar el detalle del libro
-      document.getElementById("detalle-libro").style.display = "block";
-    });
-  });
-});
+    <!-- MENÚ MÒBIL -->
 
-// botón de ir a Amazon se dirige a mi perfil personal
+    <button
+      class="menu-icon postpo-menu-icon"
+      id="menuToggle"
+      aria-label="Obrir menú"
+      type="button"
+    >
 
-function irAmazon() {
-  const titulo = document.getElementById("titulo").textContent;
-  const url = "https://www.amazon.es/Sra-SANDRA-BARRACHINA-ARRIBAS/e/B07R7PMKKQ/ref=aufs_dp_fta_dsk" + encodeURIComponent(titulo);
-  window.open(url, "_blank");
-}
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+
+    <!-- MENÚ -->
+
+    <ul id="MenuItems" class="postpo-menu">
+
+      <li>
+        <a href="/index.html">INICI</a>
+      </li>
+
+      <li>
+        <a href="/pospo.html">POSTPRODUCCIÓ</a>
+      </li>
+
+      <li>
+        <a class="active" href="/escritora.html">ESCRIPTORA</a>
+      </li>
+
+      <li>
+        <a href="/Contacto.html">CONTACTE</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</header>
 
 
 
-</script>
+<!-- =========================================================
+     CONTINGUT PRINCIPAL
+========================================================= -->
+
+<main class="writer-page">
 
 
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="writer-hero">
+
+  <div class="writer-hero-content">
+
+    <span class="writer-eyebrow">
+      ESCRIPTORA · FANTASIA · IMAGINACIÓ
+    </span>
+
+    <h1>
+      Sandra<br>
+      Barrachina
+    </h1>
+
+    <p class="writer-hero-quote">
+      Els llibres obren finestres a mons que encara no coneixem.
+    </p>
+
+    <p class="writer-hero-text">
+
+      Escric històries de fantasia, aventures i imaginació.
+      Històries que comencen entre les paraules i acaben
+      vivint també en imatges, vídeos i veus.
+
+    </p>
 
 
+    <div class="writer-hero-buttons">
 
-<!-- blog post  -->
+      <a
+        href="https://www.amazon.es/Sra-SANDRA-BARRACHINA-ARRIBAS/e/B07R7PMKKQ"
+        target="_blank"
+        class="writer-button writer-button-dark"
+      >
+        VEURE ELS MEUS LLIBRES
+      </a>
 
 
-<section class="container-escribir">
-<h3 class="site-title-c"> Siente Escribir | El blog <i class="fa fa-pencil"></i></h3>  
+      <a
+        href="#xiu-xiu"
+        class="writer-button writer-button-light"
+      >
+        UN XIU-XIU DE PARAULES
+      </a>
 
-<p class="para-e" id="siente">
-  Crear mundos imaginarios en tus sueños.
-Levantarte con ganas de plasmarlo en un trozo de papel.
-Comenzar sin saber muy bien lo que contar, darte cuenta 
-de que estás tan emocionado, que no puedes parar de escribir.
- La historia te atrapa y no te deja parar. Cuando terminas, 
- la satisfacción es tan grande que quieres volver a empezar.
- </p>
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- slider uno portadas blog -->
 
-		
-<div class="carousel">
-  <div class="carousel__contenedor">
-    <button aria-label="Anterior" class="carousel__anterior">
-      <i class="fas fa-chevron-left"></i>
-    </button>
+<!-- =========================================================
+     UN XIU-XIU DE PARAULES
+========================================================= -->
 
-    <div class="carousel__lista">
-      <div class="carousel__elemento">
-        <img src="/MisImg/portadas-blog/relato5.png" alt="">
-      </div>
-      <div class="carousel__elemento">
-        <img src="/MisImg/portadas-blog/relato16.png" alt="">
-      </div>
-      <div class="carousel__elemento">
-        <img src="/MisImg/portadas-blog/relato15.png" alt="">
-      </div>
-      <div class="carousel__elemento">
-        <img src="img/categoria2/14.png" alt="">
-      </div>
+<section class="writer-xiu-xiu" id="xiu-xiu">
 
-      <div class="carousel__elemento">
-        <img src="img/categoria2/20.png" alt="">
-      </div>
-      <div class="carousel__elemento">
-        <img src="img/categoria2/22.png" alt="Harmony Tower">
-      </div>
-     
-      <div class="carousel__elemento">
-        <img src="img/categoria2/23.png" alt="Harmony Tower">
-      </div>
-    </div>
-   
-    <button aria-label="Siguiente" class="carousel__siguiente">
-      <i class="fas fa-chevron-right"></i>
-    </button>
-  </div>
+  <div class="xiu-xiu-heading">
 
-  <div role="tablist" class="carousel__indicadores"></div>
-</div>
-</div>
+    <span class="writer-section-label">
+      ÀUDIO · VEU · IMATGES
+    </span>
 
+    <h2>
+      Un xiu-xiu<br>
+      de paraules
+    </h2>
 
+    <p>
 
-<!-- filtros blog content -->
-    
+      Les històries també poden escoltar-se.
+      Un espai per compartir fragments dels meus llibres,
+      poemes, relats i petites històries a través de la veu.
 
-  <div class="filters">
-    <button class="filter" data-category="all">Todas</button>
-    <button class="filter" data-category="category1">Críticas</button>
-    <button class="filter" data-category="category2">Relatos</button>
-    <button class="filter" data-category="category3">Diarios</button>
+    </p>
 
   </div>
-  
-  <div class="gallery-container-3">
-    <div class="img-box-3" data-category="category1">
-      <a href="https://sandrabarrachina.blogspot.com/2020/03/el-hoyo.html" target="_blank">
-        <img src="/img/categoria1/9.png" alt="image 1">
-      </a>
-    </div>
-    <div class="img-box-3" data-category="category2">
-      <a href="https://sandrabarrachina.blogspot.com/2020/09/mi-novia-es-un-holograma.html" target="_blank">
-        <img src="/img/categoria2/1.png" alt="image 2">
-      </a>
-    </div>
-   
-    <div class="img-box-3" data-category="category1">
-      <a href="https://sandrabarrachina.blogspot.com/2022/10/critica-los-renglones-perdidos-de-dios.html"target="_blank">
-        <img src="/img/categoria1/69.png" alt="image 4">
-      </a>
-    </div>
-    
-    
-
-        <!--  -->
-  
-        <div class="img-box-3" data-category="category2">
-          <a href="https://sandrabarrachina.blogspot.com/2019/12/monica-y-leo-son-dos-enamorados.html" target="_blank">
-
-          <img src="/img/categoria2/2.png" alt="image 5">
-          </a>
-            </div> 
-      
-  
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2019/12/43-separaciones-y-pequenas-mentiras.html" target="_blank">
-
-              <img src="/img/categoria1/58.png" alt="image 1">
-              </a>
-
-            </div>
-
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2020/01/normal-0-21-false-false-false-es-x-none.html" target="_blank">
-
-              <img src="/img/categoria2/3.png" alt="image 2">
-
-              </a>
-            </div>
-
-         
-  
-
-  
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2021/06/4-la-mirona-televisiva-amor-y-musica.html" target="_blank">
-
-              <img src="/img/categoria3/4.png" alt="image 1">
-              </a>
-            </div>
-
-            <!--  -->
 
 
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2020/04/amor-en-la-terminal.html" target="_blank">
-
-              <img src="/img/categoria2/4.png" alt="image 2">
-              </a>
-            </div>
-
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2020/07/fantasma-muerte-y-mundos-virtuales.html" target="_blank">
-
-              <img src="/img/categoria1/2.png" alt="image 3">
-              </a>
-            </div>
-  
-  
-  
-
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2021/04/vidente-digame-sin-tener-idea.html" target="_blank">
-
-              <img src="/img/categoria2/17.png" alt="image 2">
-              </a>
-            </div>
-            
-          
-  
-  <!--  -->
+  <div class="xiu-xiu-platforms">
 
 
+    <!-- =====================================================
+         SPOTIFY
+    ====================================================== -->
 
+    <a
+      href="https://twitter.com/Sbarrachinafilm"
+      target="_blank"
+      class="xiu-xiu-platform xiu-xiu-spotify"
+    >
 
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2022/09/el-carrito-espacial.html" target="_blank">
+      <div class="xiu-xiu-icon">
 
-              <img src="/img/categoria2/21.png" alt="image 2">
+        <i class="fa fa-music"></i>
 
-              </a>
-            </div>
-
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2019/10/36-superheroes-perros-y-clones.html" target="_blank">
-
-              <img src="/img/categoria1/51.png" alt="image 3">
-              </a>
-            </div>
-  
-  
-            
-
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2020/06/ensename-la-curvatura.html" target="_blank">
-
-              <img src="/img/categoria2/6.png" alt="image 2">
-              </a>
-            </div>
-  
-            <!--  -->
-
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2018/11/18-los-crimenes-de-grindelwald-con.html" target="_blank">
-
-              <img src="/img/categoria1/30.png" alt="image 1">
-              </a>
-            
-            </div>
-
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2021/04/1-la-mirosa-televisiva-animales.html" target="_blank">
-
-              <img src="/img/categoria3/65.png" alt="image 3">
-              </a>
-            </div>
-
-
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2021/05/2-la-mirona-televisiva-perdida.html" target="_blank">
-
-              <img src="/img/categoria3/66.png" alt="image 1">
-              </a>
-            </div>
-
-
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2021/06/3-la-mirona-televisiva-madres.html" target="_blank">
-
-              <img src="/img/categoria3/67.png" alt="image 1">
-              </a>
-            </div>
-
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2021/03/cuidare-de-ti.html" target="_blank">
-
-              <img src="/img/categoria2/12.png" alt="image 2">
-              </a>
-            </div>
-
-            <!--  -->
-            
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2019/06/30-historia-de-un-juguete-toy-story-4.html" target="_blank">
-
-              <img src="/img/categoria1/46.png" alt="image 3">
-              </a>
-            </div>
-  
-  
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2021/04/no-olvides-smartphone.html" target="_blank">
-
-              <img src="/img/categoria2/13.png" alt="image 2">
-              </a>
-            </div>
-          
-  
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2019/11/38-luis-miguel-el-sol-que-brilla-en.html" target="_blank">
-
-              <img src="/img/categoria1/53.png" alt="image 2">
-              </a>
-            </div>
-
-
-            <div class="img-box-3" data-category="category2">
-              <a href="https://sandrabarrachina.blogspot.com/2021/02/levantarse-y-darte-cuenta-que-hoy-puede.html" target="_blank">
-
-              <img src="/img/categoria2/10.png" alt="image 2">
-                </a>
-            </div>
-
-            <div class="img-box-3" data-category="category3">
-              <a href="http://sandrabarrachina.blogspot.com/2021/07/5-la-mirona-televisiva-bailes.html" target="_blank">
-
-              <img src="/img/categoria3/5.png" alt="image 1">
-              </a>
-            </div>
-
-            <div class="img-box-3" data-category="category3">
-              <a href="http://sandrabarrachina.blogspot.com/2022/03/6-la-mirona-televisiva-nos-vamos-al.html" target="_blank">
-
-              <img src="/img/categoria3/68.png" alt="image 1">
-              </a>
-            </div>
-
-
-          
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2020/08/chicas-malas-y-cambios-perspectiva.html" target="_blank">
-
-              <img src="/img/categoria1/1.png" alt="image 3">
-              </a>
-            </div>
-  
-         
-  
       </div>
 
 
-      <!-- Sección galeria de videos -->
+      <div>
 
-      <div class="container-videos">
-        <div class="conten">
-            <h1><i class="fa-brands fa-youtube "></i> MIS VIDEOS</h1>
-            <p>Videos relacionados con mi faceta de escritora.
-              incluyendo los booktrailers de mis libros
-   
-            </p>
+        <span>
+          PRÒXIMAMENT
+        </span>
+
+        <h3>
+          Spotify
+        </h3>
+
+        <p>
+
+          Fragments de llibres, poemes i històries
+          per escoltar.
+
+        </p>
+
+        <strong>
+          ESCOLTA UN XIU-XIU DE PARAULES →
+        </strong>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- =====================================================
+         YOUTUBE
+    ====================================================== -->
+
+    <a
+      href="https://www.youtube.com/c/SandraBarrachina"
+      target="_blank"
+      class="xiu-xiu-platform xiu-xiu-youtube"
+    >
+
+      <div class="xiu-xiu-icon">
+
+        <i class="fa fa-youtube-play"></i>
+
+      </div>
+
+
+      <div>
+
+        <span>
+          UNIVERS AUDIOVISUAL
+        </span>
+
+        <h3>
+          YouTube
+        </h3>
+
+        <p>
+
+          Booktrailers, fragments audiovisuals
+          i continguts relacionats amb els meus llibres.
+
+        </p>
+
+        <strong>
+          ENTRA AL CANAL →
+        </strong>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LA MEVA OBRA
+========================================================= -->
+
+<section class="writer-books" id="llibres">
+
+  <div class="writer-section-heading">
+
+    <span class="writer-section-label">
+      LA MEVA OBRA
+    </span>
+
+    <h2>
+      Els meus llibres
+    </h2>
+
+    <p>
+
+      Històries de fantasia i aventura escrites en català,
+      pensades per deixar una porta oberta a la imaginació.
+
+    </p>
+
+  </div>
+
+
+
+  <div class="writer-books-grid">
+
+
+    <!-- =====================================================
+         LLIBRE 1
+    ====================================================== -->
+
+    <article class="writer-book-card">
+
+      <div class="writer-book-cover">
+
+        <span class="writer-book-number">
+          01
+        </span>
+
+        <img
+          src="/MisImg/portadas libro/portada_ebook_julia .jpg"
+          alt="Portada de La recerca del drac de la llum"
+        >
+
+      </div>
+
+
+      <div class="writer-book-info">
+
+        <span>
+          LLIBRE
+        </span>
+
+        <h3>
+          La recerca del drac de la llum
+        </h3>
+
+        <p>
+
+          Una aventura de fantasia, misteri i imaginació
+          que obre les portes a un món extraordinari.
+
+        </p>
+
+        <a
+          href="https://www.amazon.es/Sra-SANDRA-BARRACHINA-ARRIBAS/e/B07R7PMKKQ"
+          target="_blank"
+        >
+          VEURE A AMAZON →
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- =====================================================
+         LLIBRE 2
+    ====================================================== -->
+
+    <article class="writer-book-card">
+
+      <div class="writer-book-cover">
+
+        <span class="writer-book-number">
+          02
+        </span>
+
+        <img
+          src="/MisImg/portadas libro/portada_ebook_relats2.png"
+          alt="Portada de La recerca més enllà del temps"
+        >
+
+      </div>
+
+
+      <div class="writer-book-info">
+
+        <span>
+          LLIBRE
+        </span>
+
+        <h3>
+          La recerca més enllà del temps
+        </h3>
+
+        <p>
+
+          Una nova aventura on literatura, fantasia
+          i imaginació es troben per travessar els límits
+          del temps.
+
+        </p>
+
+        <a
+          href="https://www.amazon.es/Sra-SANDRA-BARRACHINA-ARRIBAS/e/B07R7PMKKQ"
+          target="_blank"
+        >
+          VEURE A AMAZON →
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- =====================================================
+         LLIBRE 3
+    ====================================================== -->
+
+    <article class="writer-book-card">
+
+      <div class="writer-book-cover writer-book-third">
+
+        <span class="writer-book-number">
+          03
+        </span>
+
+
+        <div class="writer-book-placeholder">
+
+          <span>
+            PROPERAMENT
+          </span>
+
+          <strong>
+            La recerca
+          </strong>
+
+          <small>
+            més enllà de les estrelles
+          </small>
+
         </div>
-        
-        <div class="grupo">
-            <h1 class="title1"><i class="fa fa-film"></i>
-              Book Trailers</h1>
-            <div class="contvideos">   
-                <div class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nz_Y0uankic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>                                         
-                <div class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/kKI1Zej-kdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                
-                
-            </div>
-            
 
-            <div class="grupo2">
-              
-              <div class="contvideos">   
-                  
-                  <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E0umhGIgWXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>                
-                  <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4y5oetNMOOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                  
-              </div>
 
+        <div class="writer-book-coming">
+          DESEMBRE 2026
         </div>
-        <div class="grupo2">
-            <h1 class="title1"><i class="fa fa-book"></i>
-              Presentaciones</h1>
-            <div class="contvideos">            
-                
-                <div class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xsKDhYf4swQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/PyWhE2B_zyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
 
-        </div>
+      </div>
+
+
+      <div class="writer-book-info">
+
+        <span>
+          NOU LLIBRE
+        </span>
+
+        <h3>
+          La recerca més enllà de les estrelles
+        </h3>
+
+        <p>
+
+          Una nova aventura que portarà la història
+          molt més enllà dels llibres i les estrelles.
+
+        </p>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+
+
+  <div class="writer-books-button">
+
+    <a
+      href="https://www.amazon.es/Sra-SANDRA-BARRACHINA-ARRIBAS/e/B07R7PMKKQ"
+      target="_blank"
+      class="writer-button writer-button-dark"
+    >
+      VEURE EL MEU PERFIL D'AUTORA A AMAZON
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     NOU PROJECTE · TRÀILER
+========================================================= -->
+
+<section class="writer-new-book">
+
+  <div class="writer-new-book-image">
+
+    <div class="writer-new-book-decoration">
+      ✦
     </div>
-    
+
+  </div>
+
+
+  <div class="writer-new-book-content">
+
+    <span class="writer-section-label">
+      NOU PROJECTE · 2026
+    </span>
+
+    <h2>
+      Més enllà<br>
+      de les estrelles
+    </h2>
+
+    <p class="writer-new-book-date">
+      DESEMBRE 2026
+    </p>
+
+    <p>
+
+      La tercera aventura de la sèrie.
+      Una història que amplia l'univers dels llibres
+      i porta els personatges cap a nous mons.
+
+    </p>
+
+  </div>
+
+
+  <!-- =====================================================
+       TRÀILER DE PROVA
+       Aquest vídeo és provisional.
+       Quan tinguis el tràiler nou, només cal substituir
+       l'ID del vídeo de YouTube.
+  ====================================================== -->
+
+  <div class="writer-trailer">
+
+    <span class="writer-section-label">
+      TRÀILER
+    </span>
+
+    <h3>
+      Descobreix la història
+    </h3>
+
+    <div class="writer-trailer-video">
+
+      <iframe
+        src="https://www.youtube.com/embed/nz_Y0uankic"
+        title="Tràiler de prova"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
+<!-- =========================================================
+     BLOG
+========================================================= -->
+
+<section class="writer-blog">
+
+  <div class="writer-blog-heading">
+
+    <div>
+
+      <span class="writer-section-label">
+        ESCRIPTURA
+      </span>
+
+      <h2>
+        El meu blog
+      </h2>
+
+    </div>
+
+
+    <a
+      href="https://sandrabarrachina.blogspot.com/"
+      target="_blank"
+      class="writer-text-link"
+    >
+      VISITA EL BLOG →
+    </a>
+
+  </div>
+
+
+  <p class="writer-blog-intro">
+
+    Relats, reflexions, crítiques i petites històries.
+    Un espai on vaig començar a experimentar amb les paraules
+    i que continua formant part del meu univers com a escriptora.
+
+  </p>
+
+
+  <div class="writer-blog-grid">
+
+
+    <a
+      href="https://sandrabarrachina.blogspot.com/2020/03/el-hoyo.html"
+      target="_blank"
+      class="writer-blog-card"
+    >
+
+      <img
+        src="/img/categoria1/9.png"
+        alt="Article del blog"
+      >
+
+    </a>
+
+
+    <a
+      href="https://sandrabarrachina.blogspot.com/2020/09/mi-novia-es-un-holograma.html"
+      target="_blank"
+      class="writer-blog-card"
+    >
+
+      <img
+        src="/img/categoria2/1.png"
+        alt="Article del blog"
+      >
+
+    </a>
+
+
+    <a
+      href="https://sandrabarrachina.blogspot.com/2022/10/critica-los-renglones-perdidos-de-dios.html"
+      target="_blank"
+      class="writer-blog-card"
+    >
+
+      <img
+        src="/img/categoria1/69.png"
+        alt="Article del blog"
+      >
+
+    </a>
+
+
+    <a
+      href="https://sandrabarrachina.blogspot.com/2019/12/monica-y-leo-son-dos-enamorados.html"
+      target="_blank"
+      class="writer-blog-card"
+    >
+
+      <img
+        src="/img/categoria2/2.png"
+        alt="Article del blog"
+      >
+
+    </a>
+
+
+    <a
+      href="https://sandrabarrachina.blogspot.com/2020/04/amor-en-la-terminal.html"
+      target="_blank"
+      class="writer-blog-card"
+    >
+
+      <img
+        src="/img/categoria2/4.png"
+        alt="Article del blog"
+      >
+
+    </a>
+
+
+    <a
+      href="https://sandrabarrachina.blogspot.com/2020/07/fantasma-muerte-y-mundos-virtuales.html"
+      target="_blank"
+      class="writer-blog-card"
+    >
+
+      <img
+        src="/img/categoria1/2.png"
+        alt="Article del blog"
+      >
+
+    </a>
+
+
+  </div>
+
+</section>
 
 
 
-    
-    
-    <footer>
-        <div class="section-5 text-center">
-            <h4 style="margin-top: 5%;" id="contactame">No te lo pienses más</h4>
-            
-            <div class="form-inline justify-content-center">
-               <a href="/Contacto.html"> <input type="button" value="CONTACTA" class="btn btn-danger px-4 py-2" id="boton-cv"> </a>               
-            </div>
-            <div class="social" style="margin: 5%;">
-                   <div class="d-flex flex-row justify-content-center">
-                    <a href="https://www.linkedin.com/in/sandra-barrachina-00569630/" target="_blank"><i class="fa fa-linkedin m-2"></i></a>
-                    <a href="https://www.youtube.com/c/SandraBarrachina" target="_blank"><i class="fa fa-youtube m-2"></i></a>
-                    <a href="https://www.instagram.com/sbarrachinafilms/" target="_blank"><i class="fa fa-instagram m-2"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100063769971904" target="_blank"><i class="fa fa-facebook m-2"></i></a>
-                    <a href="https://github.com/Sbarrachina" target="_blank"><i class="fa fa-github m-2"></i></a>
-                    <a href="https://twitter.com/Sbarrachinafilm" target="_blank"><i class="fa fa-twitter m-2"></i></a>
-                    <a href="https://www.flickr.com/photos/120700302@N02//" target="_blank"><i class="fa fa-flickr m-2"></i></a>
-                    
-                   </div>                    
-                </div>
-                
-            <h5 style="color: rgb(24, 25, 25);"> ©2023 All rights reserved | made by SBarrachina Code  <i class="fa fa-heart-o"></i></h5>
-          </div>
-    </footer>     
-    <script src="./servicios-2.js"></script>   
+<!-- *=========================================================*
+     *CONTACTE*
+*=========================================================* -->
+
+<section class="writer-contact">
+
+  <span class="writer-section-label">
+    CONTACTE
+  </span>
+
+  <h2>
+    Parlem?
+  </h2>
+
+  <p>
+    Si vols posar-te en contacte amb mi, estaré encantada de llegir-te.
+  </p>
+
+  <a
+    href="/Contacto.html"
+    class="writer-button writer-button-dark"
+  >
+    CONTACTA AMB MI
+  </a>
+
+</section>
 
 
-    <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
+</main>
 
-    <script type="text/javascript" src="./venobox/venobox.min.js"></script>
 
-<script src="/slider.js"></script>
 
-<!-- carousel links -->
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
-   
+<footer class="writer-footer">
+
+  <div class="writer-footer-social">
+
+
+    <a
+      href="https://www.linkedin.com/in/sandra-barrachina-00569630/"
+      target="_blank"
+      aria-label="LinkedIn"
+    >
+      <i class="fa fa-linkedin"></i>
+    </a>
+
+
+    <a
+      href="https://www.youtube.com/c/SandraBarrachina"
+      target="_blank"
+      aria-label="YouTube"
+    >
+      <i class="fa fa-youtube"></i>
+    </a>
+
+
+    <a
+      href="https://www.instagram.com/sbarrachinafilms/"
+      target="_blank"
+      aria-label="Instagram"
+    >
+      <i class="fa fa-instagram"></i>
+    </a>
+
+
+    <a
+      href="https://www.facebook.com/profile.php?id=100063769971904"
+      target="_blank"
+      aria-label="Facebook"
+    >
+      <i class="fa fa-facebook"></i>
+    </a>
+
+
+    <a
+      href="https://github.com/Sbarrachina"
+      target="_blank"
+      aria-label="GitHub"
+    >
+      <i class="fa fa-github"></i>
+    </a>
+
+
+    <a
+      href="https://twitter.com/Sbarrachinafilm"
+      target="_blank"
+      aria-label="Twitter"
+    >
+      <i class="fa fa-twitter"></i>
+    </a>
+
+
+    <a
+      href="https://www.flickr.com/photos/120700302@N02//"
+      target="_blank"
+      aria-label="Flickr"
+    >
+      <i class="fa fa-flickr"></i>
+    </a>
+
+
+  </div>
+
+
+  <p>
+
+    © 2026 Sandra Barrachina · Tots els drets reservats
+    · SBarrachina Code
+    <i class="fa fa-heart-o"></i>
+
+  </p>
+
+</footer>
+
+
+
+<!-- =========================================================
+     SCRIPTS
+========================================================= -->
+
+<script src="./servicios-2.js"></script>
+
+
 </body>
+
 </html>
