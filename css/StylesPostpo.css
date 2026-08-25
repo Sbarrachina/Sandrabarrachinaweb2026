@@ -234,7 +234,7 @@
   
     flex-wrap: wrap;
   
-    gap: 12px;
+    gap: 16px;
   }
   
   
@@ -249,8 +249,8 @@
   
   .postpo-social a {
   
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
   
     display: flex;
   
