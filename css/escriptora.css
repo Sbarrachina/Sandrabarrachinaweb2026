@@ -1,3 +1,4 @@
+
 /* =========================================================
    ESCRIPTORA.CSS
    Sandra Barrachina | Escriptora
@@ -9,1157 +10,1022 @@
 ========================================================= */
 
 .writer-page {
-    width: 100%;
-    overflow: hidden;
-    background: #f4f1eb;
-    color: #202020;
-  }
-  
-  .writer-page * {
-    box-sizing: border-box;
-  }
-  
-  .writer-page h1,
-  .writer-page h2,
-  .writer-page h3,
-  .writer-page p {
-    margin-top: 0;
-  }
-  
-  .writer-page a {
-    text-decoration: none;
-  }
-  
-  
-  /* =========================================================
-     HERO
-  ========================================================= */
-  
-  .writer-hero {
-    min-height: 720px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  
-    background:
-      linear-gradient(
-        90deg,
-        rgba(18, 18, 18, 0.96) 0%,
-        rgba(18, 18, 18, 0.88) 45%,
-        rgba(18, 18, 18, 0.68) 100%
-      );
-  
-    color: #ffffff;
-  }
-  
-  
-  /* textura subtil */
-  
-  .writer-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-  
-    background:
-      radial-gradient(
-        circle at 78% 30%,
-        rgba(255,255,255,0.08),
-        transparent 28%
-      );
-  
-    pointer-events: none;
-  }
-  
-  
-  .writer-hero-content {
-    width: min(1200px, 90%);
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-  
-    padding: 100px 0;
-  }
-  
-  
-  .writer-eyebrow {
-    display: block;
-  
-    font-size: 14px;
-    letter-spacing: 4px;
-    font-weight: 600;
-  
-    margin-bottom: 28px;
-  
-    color: #d6c5a4;
-  }
-  
-  
-  .writer-hero h1 {
-    font-size: clamp(64px, 9vw, 125px);
-    line-height: 0.88;
-    font-weight: 300;
-    letter-spacing: -4px;
-  
-    margin-bottom: 40px;
-  }
-  
-  
-  .writer-hero-quote {
-    max-width: 720px;
-  
-    font-family: Georgia, serif;
-    font-size: clamp(24px, 3vw, 38px);
-    line-height: 1.25;
-    font-style: italic;
-  
-    color: #e8dfd0;
-  
-    margin-bottom: 25px;
-  }
-  
-  
-  .writer-hero-text {
-    max-width: 650px;
-  
-    font-size: 19px;
-    line-height: 1.75;
-  
-    color: #d7d7d7;
-  
-    margin-bottom: 40px;
-  }
-  
-  
-  /* =========================================================
-     BOTONS
-  ========================================================= */
-  
-  .writer-hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  
-  .writer-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  
-    min-height: 52px;
-    padding: 15px 27px;
-  
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-  
-    transition: all 0.3s ease;
-  }
-  
-  
-  .writer-button-dark {
-    background: #202020;
-    color: #ffffff;
-    border: 1px solid #202020;
-  }
-  
-  
-  .writer-button-dark:hover {
-    background: #d6c5a4;
-    border-color: #d6c5a4;
-    color: #202020;
-  }
-  
-  
-  .writer-button-light {
-    background: transparent;
-    color: #ffffff;
-    border: 1px solid rgba(255,255,255,0.55);
-  }
-  
-  
-  .writer-button-light:hover {
-    background: #ffffff;
-    color: #202020;
-  }
-  
-  
-  /* =========================================================
-     ETIQUETES DE SECCIÓ
-  ========================================================= */
-  
-  .writer-section-label {
-    display: block;
-  
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3px;
-  
-    color: #947e5b;
-  
-    margin-bottom: 18px;
-  }
-  
-  
-  /* =========================================================
-     XIU-XIU
-  ========================================================= */
-  
-  .writer-xiu-xiu {
-    padding: 110px 7%;
-    background: #e8e2d7;
-  }
-  
-  
-  .xiu-xiu-heading {
-    max-width: 900px;
-    margin: 0 auto 55px;
-    text-align: center;
-  }
-  
-  
-  .xiu-xiu-heading h2 {
-    font-family: Georgia, serif;
-  
-    font-size: clamp(48px, 6vw, 78px);
-    line-height: 0.95;
-    font-weight: 400;
-  
-    margin-bottom: 28px;
-  }
-  
-  
-  .xiu-xiu-heading p {
-    max-width: 680px;
-    margin: 0 auto;
-  
-    font-size: 18px;
-    line-height: 1.75;
-  
-    color: #55504a;
-  }
-  
-  
-  .xiu-xiu-platforms {
-    max-width: 1150px;
-    margin: 0 auto;
-  
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-  
-  
-  .xiu-xiu-platform {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-  
-    padding: 38px;
-  
-    background: #f7f4ee;
-  
-    border: 1px solid rgba(0,0,0,0.08);
-  
-    color: #202020;
-  
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease,
-      background 0.3s ease;
-  }
-  
-  
-  .xiu-xiu-platform:hover {
-    transform: translateY(-7px);
-  
-    box-shadow:
-      0 18px 45px rgba(0,0,0,0.12);
-  
-    color: #202020;
-  }
-  
-  
-  .xiu-xiu-icon {
-    min-width: 58px;
-    width: 58px;
-    height: 58px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    border-radius: 50%;
-  
-    background: #202020;
-    color: #ffffff;
-  
-    font-size: 25px;
-  }
-  
-  
-  .xiu-xiu-platform span {
-    display: block;
-  
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-  
-    color: #947e5b;
-  
-    margin-bottom: 8px;
-  }
-  
-  
-  .xiu-xiu-platform h3 {
-    font-family: Georgia, serif;
-  
-    font-size: 32px;
-    font-weight: 400;
-  
-    margin-bottom: 10px;
-  }
-  
-  
-  .xiu-xiu-platform p {
-    font-size: 16px;
-    line-height: 1.6;
-  
-    color: #625d56;
-  
-    margin-bottom: 18px;
-  }
-  
-  
-  .xiu-xiu-platform strong {
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-  
-  
-  /* =========================================================
-     LLIBRES
-  ========================================================= */
-  
-  .writer-books {
-    padding: 120px 7%;
-    background: #f4f1eb;
-  }
-  
-  
-  .writer-section-heading {
-    max-width: 850px;
-    margin: 0 auto 65px;
-    text-align: center;
-  }
-  
-  
-  .writer-section-heading h2 {
-    font-family: Georgia, serif;
-  
-    font-size: clamp(48px, 6vw, 76px);
-    font-weight: 400;
-  
-    margin-bottom: 25px;
-  }
-  
-  
-  .writer-section-heading p {
-    font-size: 18px;
-    line-height: 1.7;
-  
-    color: #625d56;
-  }
-  
-  
+  width: 100%;
+  overflow: hidden;
+  background: #f4f1eb;
+  color: #202020;
+}
+
+.writer-page * {
+  box-sizing: border-box;
+}
+
+.writer-page h1,
+.writer-page h2,
+.writer-page h3,
+.writer-page p {
+  margin-top: 0;
+}
+
+.writer-page a {
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.writer-hero {
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.writer-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/img/2026/fondo libreria .jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
+
+.writer-hero-content {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 100px 0;
+}
+
+.writer-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 78% 30%,
+      rgba(255, 255, 255, 0.08),
+      transparent 28%
+    );
+  pointer-events: none;
+}
+
+.writer-eyebrow {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: #d6c5a4;
+}
+
+.writer-hero h1 {
+  font-size: clamp(64px, 9vw, 125px);
+  line-height: 0.88;
+  font-weight: 300;
+  letter-spacing: -4px;
+  margin-bottom: 40px;
+}
+
+.writer-hero-quote {
+  max-width: 720px;
+  font-family: Georgia, serif;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.25;
+  font-style: italic;
+  color: #e8dfd0;
+  margin-bottom: 25px;
+}
+
+.writer-hero-text {
+  max-width: 650px;
+  font-size: 23px;
+  line-height: 1.75;
+  color: #d7d7d7;
+  margin-bottom: 40px;
+}
+
+
+/* =========================================================
+   BOTONS
+========================================================= */
+
+.writer-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.writer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 15px 27px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+}
+
+.writer-button-dark {
+  background: #202020;
+  color: #ffffff;
+  border: 1px solid #202020;
+}
+
+.writer-button-dark:hover {
+  background: #d6c5a4;
+  border-color: #d6c5a4;
+  color: #202020;
+}
+
+.writer-button-light {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.writer-button-light:hover {
+  background: #ffffff;
+  color: #202020;
+}
+
+
+/* =========================================================
+   ETIQUETES DE SECCIÓ
+========================================================= */
+
+.writer-section-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #947e5b;
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   XIU-XIU
+========================================================= */
+
+.writer-xiu-xiu {
+  padding: 110px 7%;
+  background: #e8e2d7;
+}
+
+.xiu-xiu-heading {
+  max-width: 900px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.xiu-xiu-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.95;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.xiu-xiu-heading p {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #55504a;
+}
+
+.xiu-xiu-platforms {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.xiu-xiu-platform {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 38px;
+  background: #f7f4ee;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #202020;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.xiu-xiu-platform:hover {
+  transform: translateY(-7px);
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.12);
+  color: #202020;
+}
+
+.xiu-xiu-icon {
+  min-width: 58px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #202020;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.xiu-xiu-platform span {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #947e5b;
+  margin-bottom: 8px;
+}
+
+.xiu-xiu-platform h3 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.xiu-xiu-platform p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #625d56;
+  margin-bottom: 18px;
+}
+
+.xiu-xiu-platform strong {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   LLIBRES
+========================================================= */
+
+.writer-books {
+  padding: 120px 7%;
+  background: #f4f1eb;
+}
+
+.writer-section-heading {
+  max-width: 850px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.writer-section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 6vw, 76px);
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.writer-section-heading p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #625d56;
+}
+
+.writer-books-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.writer-book-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.writer-book-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.writer-book-cover {
+  height: 470px;
+  position: relative;
+  background: #ded9cf;
+  overflow: hidden;
+}
+
+.writer-book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.writer-book-number {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 3;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 8px 11px;
+}
+
+.writer-book-info {
+  padding: 30px;
+}
+
+.writer-book-info > span {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #947e5b;
+  margin-bottom: 13px;
+}
+
+.writer-book-info h3 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.writer-book-info p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #625d56;
+  margin-bottom: 22px;
+}
+
+.writer-book-info a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #202020;
+}
+
+.writer-book-info a:hover {
+  color: #947e5b;
+}
+
+
+/* =========================================================
+   TERCER LLIBRE - PROPERAMENT
+========================================================= */
+
+.writer-book-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at center,
+      #393733 0%,
+      #171717 70%
+    );
+  color: #ffffff;
+}
+
+.writer-book-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.writer-book-placeholder span {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #d6c5a4;
+  margin-bottom: 20px;
+}
+
+.writer-book-placeholder strong {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.writer-book-placeholder small {
+  margin-top: 10px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #d9d0c3;
+}
+
+.writer-book-coming {
+  position: absolute;
+  bottom: 25px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.writer-books-button {
+  text-align: center;
+  margin-top: 55px;
+}
+
+
+/* =========================================================
+   NOU PROJECTE
+========================================================= */
+
+.writer-new-book {
+  padding: 110px 7%;
+  background: #202020;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1.4fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.writer-new-book-image {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(214, 197, 164, 0.18),
+      transparent 55%
+    );
+}
+
+.writer-new-book-decoration {
+  font-size: 110px;
+  color: #d6c5a4;
+  opacity: 0.8;
+}
+
+.writer-new-book-content {
+  max-width: 500px;
+}
+
+.writer-new-book-content .writer-section-label {
+  color: #d6c5a4;
+}
+
+.writer-new-book-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(50px, 6vw, 82px);
+  line-height: 0.95;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.writer-new-book-date {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #d6c5a4;
+  margin-bottom: 25px;
+}
+
+.writer-new-book-content > p:not(.writer-new-book-date) {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #d2d2d2;
+}
+
+
+/* =========================================================
+   TRÀILER
+========================================================= */
+
+.writer-trailer {
+  width: 100%;
+}
+
+.writer-trailer .writer-section-label {
+  color: #d6c5a4;
+}
+
+.writer-trailer h3 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.writer-trailer-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.writer-trailer-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* =========================================================
+   BLOG
+========================================================= */
+
+.writer-blog {
+  padding: 120px 7%;
+  background: #ebe6dd;
+}
+
+.writer-blog-heading {
+  max-width: 1200px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.writer-blog-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 6vw, 76px);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.writer-text-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #202020;
+  white-space: nowrap;
+}
+
+.writer-text-link:hover {
+  color: #947e5b;
+}
+
+.writer-blog-intro {
+  max-width: 850px;
+  margin: 0 auto 55px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #625d56;
+}
+
+.writer-blog-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.writer-blog-card {
+  display: block;
+  overflow: hidden;
+  background: #ffffff;
+  aspect-ratio: 1 / 1;
+}
+
+.writer-blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.writer-blog-card:hover img {
+  transform: scale(1.06);
+}
+
+
+/* =========================================================
+   CONTACTE
+========================================================= */
+
+.writer-contact {
+  padding: 120px 7%;
+  text-align: center;
+  background: #f4f1eb;
+}
+
+.writer-contact h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: 0.95;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.writer-footer {
+  padding: 65px 30px 40px;
+  background: #181818;
+  text-align: center;
+  color: #ffffff;
+}
+
+.writer-footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 35px;
+}
+
+.writer-footer-social a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 19px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.writer-footer-social a:hover {
+  background: #d6c5a4;
+  color: #202020;
+  transform: translateY(-4px);
+}
+
+.writer-footer p {
+  margin: 0;
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
   .writer-books-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-  
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  
-  .writer-book-card {
-    background: #ffffff;
-  
-    border: 1px solid rgba(0,0,0,0.08);
-  
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
-  }
-  
-  
-  .writer-book-card:hover {
-    transform: translateY(-8px);
-  
-    box-shadow:
-      0 20px 45px rgba(0,0,0,0.12);
-  }
-  
-  
-  .writer-book-cover {
-    height: 470px;
-    position: relative;
-  
-    background: #ded9cf;
-  
-    overflow: hidden;
-  }
-  
-  
-  .writer-book-cover img {
+
+  .writer-book-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 600px;
     width: 100%;
-    height: 100%;
-  
-    object-fit: cover;
-  
-    display: block;
+    margin: 0 auto;
   }
-  
-  
-  .writer-book-number {
-    position: absolute;
-    top: 18px;
-    left: 18px;
-  
-    z-index: 3;
-  
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-  
-    color: #ffffff;
-  
-    background: rgba(0,0,0,0.65);
-  
-    padding: 8px 11px;
+
+  .writer-new-book {
+    grid-template-columns: 1fr 1.5fr;
   }
-  
-  
-  .writer-book-info {
-    padding: 30px;
+
+  .writer-new-book-image {
+    display: none;
   }
-  
-  
-  .writer-book-info > span {
-    display: block;
-  
+}
+
+
+/* =========================================================
+   MÒBIL
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /* HERO */
+
+  .writer-hero {
+    min-height: auto;
+  }
+
+  .writer-hero-content {
+    width: 88%;
+    padding: 75px 0 80px;
+  }
+
+  .writer-eyebrow {
     font-size: 11px;
-    font-weight: 700;
     letter-spacing: 2px;
-  
-    color: #947e5b;
-  
-    margin-bottom: 13px;
-  }
-  
-  
-  .writer-book-info h3 {
-    font-family: Georgia, serif;
-  
-    font-size: 27px;
-    line-height: 1.15;
-    font-weight: 400;
-  
-    margin-bottom: 17px;
-  }
-  
-  
-  .writer-book-info p {
-    font-size: 16px;
-    line-height: 1.65;
-  
-    color: #625d56;
-  
+    line-height: 1.5;
     margin-bottom: 22px;
   }
-  
-  
-  .writer-book-info a {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  
-    color: #202020;
-  }
-  
-  
-  .writer-book-info a:hover {
-    color: #947e5b;
-  }
-  
-  
-  /* =========================================================
-     TERCER LLIBRE - PROPERAMENT
-  ========================================================= */
-  
-  .writer-book-third {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    text-align: center;
-  
-    background:
-      radial-gradient(
-        circle at center,
-        #393733 0%,
-        #171717 70%
-      );
-  
-    color: #ffffff;
-  }
-  
-  
-  .writer-book-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    padding: 30px;
-  }
-  
-  
-  .writer-book-placeholder span {
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: #d6c5a4;
-  
-    margin-bottom: 20px;
-  }
-  
-  
-  .writer-book-placeholder strong {
-    font-family: Georgia, serif;
-  
-    font-size: 38px;
-    font-weight: 400;
-  
-    line-height: 1.1;
-  }
-  
-  
-  .writer-book-placeholder small {
-    margin-top: 10px;
-  
-    font-family: Georgia, serif;
-  
-    font-size: 20px;
-    font-style: italic;
-  
-    color: #d9d0c3;
-  }
-  
-  
-  .writer-book-coming {
-    position: absolute;
-    bottom: 25px;
-  
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-  
-    color: #ffffff;
-  }
-  
-  
-  .writer-books-button {
-    text-align: center;
-    margin-top: 55px;
-  }
-  
-  
-  /* =========================================================
-     NOU PROJECTE
-  ========================================================= */
-  
-  .writer-new-book {
-    padding: 110px 7%;
-  
-    background: #202020;
-    color: #ffffff;
-  
-    display: grid;
-  
-    grid-template-columns: 0.8fr 1fr 1.4fr;
-  
-    gap: 55px;
-  
-    align-items: center;
-  }
-  
-  
-  .writer-new-book-image {
-    min-height: 450px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    background:
-      radial-gradient(
-        circle at center,
-        rgba(214,197,164,0.18),
-        transparent 55%
-      );
-  }
-  
-  
-  .writer-new-book-decoration {
-    font-size: 110px;
-  
-    color: #d6c5a4;
-  
-    opacity: 0.8;
-  }
-  
-  
-  .writer-new-book-content {
-    max-width: 500px;
-  }
-  
-  
-  .writer-new-book-content .writer-section-label {
-    color: #d6c5a4;
-  }
-  
-  
-  .writer-new-book-content h2 {
-    font-family: Georgia, serif;
-  
-    font-size: clamp(50px, 6vw, 82px);
-    line-height: 0.95;
-    font-weight: 400;
-  
+
+  .writer-hero h1 {
+    font-size: 64px;
+    line-height: 0.9;
+    letter-spacing: -2px;
     margin-bottom: 30px;
   }
-  
-  
-  .writer-new-book-date {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 3px;
-  
-    color: #d6c5a4;
-  
-    margin-bottom: 25px;
+
+  .writer-hero-quote {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 22px;
   }
-  
-  
-  .writer-new-book-content > p:not(.writer-new-book-date) {
-    font-size: 18px;
-    line-height: 1.7;
-  
-    color: #d2d2d2;
+
+  .writer-hero-text {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 30px;
   }
-  
-  
-  /* =========================================================
-     TRÀILER
-  ========================================================= */
-  
-  .writer-trailer {
+
+  .writer-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .writer-button {
     width: 100%;
-  }
-  
-  
-  .writer-trailer .writer-section-label {
-    color: #d6c5a4;
-  }
-  
-  
-  .writer-trailer h3 {
-    font-family: Georgia, serif;
-  
-    font-size: 32px;
-    font-weight: 400;
-  
-    margin-bottom: 25px;
-  }
-  
-  
-  .writer-trailer-video {
-    position: relative;
-  
-    width: 100%;
-  
-    aspect-ratio: 16 / 9;
-  
-    overflow: hidden;
-  
-    background: #000;
-  
-    box-shadow:
-      0 20px 50px rgba(0,0,0,0.35);
-  }
-  
-  
-  .writer-trailer-video iframe {
-    position: absolute;
-  
-    inset: 0;
-  
-    width: 100%;
-    height: 100%;
-  
-    border: 0;
-  }
-  
-  
-  /* =========================================================
-     BLOG
-  ========================================================= */
-  
-  .writer-blog {
-    padding: 120px 7%;
-  
-    background: #ebe6dd;
-  }
-  
-  
-  .writer-blog-heading {
-    max-width: 1200px;
-    margin: 0 auto 25px;
-  
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-  
-    gap: 30px;
-  }
-  
-  
-  .writer-blog-heading h2 {
-    font-family: Georgia, serif;
-  
-    font-size: clamp(48px, 6vw, 76px);
-    font-weight: 400;
-  
-    margin-bottom: 0;
-  }
-  
-  
-  .writer-text-link {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  
-    color: #202020;
-  
-    white-space: nowrap;
-  }
-  
-  
-  .writer-text-link:hover {
-    color: #947e5b;
-  }
-  
-  
-  .writer-blog-intro {
-    max-width: 850px;
-    margin: 0 auto 55px;
-  
+    min-height: 52px;
+    padding: 14px 20px;
+    font-size: 16px;
     text-align: center;
-  
-    font-size: 18px;
-    line-height: 1.7;
-  
-    color: #625d56;
   }
-  
-  
-  .writer-blog-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-  
-    display: grid;
-  
-    grid-template-columns: repeat(3, 1fr);
-  
-    gap: 20px;
+
+
+  /* XIU-XIU */
+
+  .writer-xiu-xiu {
+    padding: 80px 6%;
   }
-  
-  
-  .writer-blog-card {
-    display: block;
-  
-    overflow: hidden;
-  
-    background: #ffffff;
-  
-    aspect-ratio: 1 / 1;
-  }
-  
-  
-  .writer-blog-card img {
-    width: 100%;
-    height: 100%;
-  
-    object-fit: cover;
-  
-    display: block;
-  
-    transition: transform 0.5s ease;
-  }
-  
-  
-  .writer-blog-card:hover img {
-    transform: scale(1.06);
-  }
-  
-  
-  /* =========================================================
-     CONTACTE
-  ========================================================= */
-  
-  .writer-contact {
-    padding: 120px 7%;
-  
-    text-align: center;
-  
-    background: #f4f1eb;
-  }
-  
-  
-  .writer-contact h2 {
-    font-family: Georgia, serif;
-  
-    font-size: clamp(50px, 7vw, 90px);
-    line-height: 0.95;
-    font-weight: 400;
-  
+
+  .xiu-xiu-heading {
     margin-bottom: 40px;
   }
-  
-  
-  /* =========================================================
-     FOOTER
-  ========================================================= */
-  
-  .writer-footer {
-    padding: 65px 30px 40px;
-  
-    background: #181818;
-  
+
+  .xiu-xiu-heading h2 {
+    font-size: 48px;
+    line-height: 0.95;
+  }
+
+  .xiu-xiu-heading p {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .xiu-xiu-platforms {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .xiu-xiu-platform {
+    padding: 25px;
+    gap: 16px;
+  }
+
+  .xiu-xiu-icon {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 21px;
+  }
+
+  .xiu-xiu-platform h3 {
+    font-size: 28px;
+  }
+
+  .xiu-xiu-platform p {
+    font-size: 15px;
+  }
+
+
+  /* LLIBRES */
+
+  .writer-books {
+    padding: 80px 6%;
+  }
+
+  .writer-section-heading {
+    margin-bottom: 45px;
+  }
+
+  .writer-section-heading h2 {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .writer-section-heading p {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .writer-books-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .writer-book-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .writer-book-cover {
+    height: 430px;
+  }
+
+  .writer-book-info {
+    padding: 25px;
+  }
+
+  .writer-book-info h3 {
+    font-size: 25px;
+  }
+
+
+  /* NOU PROJECTE */
+
+  .writer-new-book {
+    padding: 80px 6%;
+    display: block;
+  }
+
+  .writer-new-book-image {
+    display: none;
+  }
+
+  .writer-new-book-content {
+    max-width: none;
+    margin-bottom: 50px;
+  }
+
+  .writer-new-book-content h2 {
+    font-size: 58px;
+    line-height: 0.95;
+  }
+
+  .writer-new-book-content > p:not(.writer-new-book-date) {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .writer-trailer h3 {
+    font-size: 28px;
+  }
+
+
+  /* BLOG */
+
+  .writer-blog {
+    padding: 80px 6%;
+  }
+
+  .writer-blog-heading {
+    display: block;
     text-align: center;
-  
-    color: #ffffff;
   }
-  
-  
+
+  .writer-blog-heading h2 {
+    margin-bottom: 25px;
+  }
+
+  .writer-blog-intro {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 40px;
+  }
+
+  .writer-blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+
+  /* CONTACTE */
+
+  .writer-contact {
+    padding: 80px 6%;
+  }
+
+  .writer-contact h2 {
+    font-size: 56px;
+  }
+
+  .writer-contact p {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+
+  /* FOOTER */
+
+  .writer-footer {
+    padding: 55px 20px 35px;
+  }
+
   .writer-footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    flex-wrap: wrap;
-  
-    gap: 22px;
-  
-    margin-bottom: 35px;
+    gap: 12px;
   }
-  
-  
+
   .writer-footer-social a {
-    width: 48px;
-    height: 48px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    border: 1px solid rgba(255,255,255,0.25);
-  
-    border-radius: 50%;
-  
-    color: #ffffff;
-  
+    width: 43px;
+    height: 43px;
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================================
+   MÒBIL PETIT
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .writer-hero-content {
+    width: 90%;
+    padding: 65px 0 70px;
+  }
+
+  .writer-hero h1 {
+    font-size: 55px;
+  }
+
+  .writer-hero-quote {
+    font-size: 22px;
+  }
+
+  .writer-hero-text {
+    font-size: 16px;
+  }
+
+  .writer-section-heading h2,
+  .xiu-xiu-heading h2 {
+    font-size: 45px;
+  }
+
+  .xiu-xiu-platform {
+    padding: 22px;
+  }
+
+  .xiu-xiu-icon {
+    min-width: 46px;
+    width: 46px;
+    height: 46px;
     font-size: 19px;
-  
-    transition:
-      background 0.3s ease,
-      color 0.3s ease,
-      transform 0.3s ease;
   }
-  
-  
-  .writer-footer-social a:hover {
-    background: #d6c5a4;
-  
-    color: #202020;
-  
-    transform: translateY(-4px);
+
+  .xiu-xiu-platform h3 {
+    font-size: 25px;
   }
-  
-  
-  .writer-footer p {
-    margin: 0;
-  
-    font-size: 13px;
-  
-    color: #aaa;
-  
-    line-height: 1.6;
+
+  .writer-book-cover {
+    height: 400px;
   }
-  
-  
-  /* =========================================================
-     TABLET
-  ========================================================= */
-  
-  @media (max-width: 1000px) {
-  
-    .writer-books-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-  
-    .writer-book-card:last-child {
-      grid-column: 1 / -1;
-  
-      max-width: 600px;
-  
-      width: 100%;
-  
-      margin: 0 auto;
-    }
-  
-  
-    .writer-new-book {
-      grid-template-columns: 1fr 1.5fr;
-    }
-  
-  
-    .writer-new-book-image {
-      display: none;
-    }
-  
+
+  .writer-book-info {
+    padding: 22px;
   }
-  
-  
-  /* =========================================================
-     MÒBIL
-  ========================================================= */
-  
-  @media (max-width: 700px) {
-  
-    .writer-hero {
-      min-height: auto;
-    }
-  
-  
-    .writer-hero-content {
-      width: 88%;
-  
-      padding: 90px 0;
-    }
-  
-  
-    .writer-eyebrow {
-      font-size: 11px;
-  
-      letter-spacing: 2px;
-    }
-  
-  
-    .writer-hero h1 {
-      font-size: 64px;
-  
-      letter-spacing: -2px;
-    }
-  
-  
-    .writer-hero-quote {
-      font-size: 25px;
-    }
-  
-  
-    .writer-hero-text {
-      font-size: 17px;
-    }
-  
-  
-    .writer-hero-buttons {
-      flex-direction: column;
-  
-      align-items: stretch;
-    }
-  
-  
-    .writer-button {
-      width: 100%;
-    }
-  
-  
-    /* XIU-XIU */
-  
-    .writer-xiu-xiu {
-      padding: 80px 6%;
-    }
-  
-  
-    .xiu-xiu-platforms {
-      grid-template-columns: 1fr;
-    }
-  
-  
-    .xiu-xiu-platform {
-      padding: 28px;
-  
-      gap: 18px;
-    }
-  
-  
-    .xiu-xiu-platform h3 {
-      font-size: 28px;
-    }
-  
-  
-    /* LLIBRES */
-  
-    .writer-books {
-      padding: 80px 6%;
-    }
-  
-  
-    .writer-books-grid {
-      grid-template-columns: 1fr;
-    }
-  
-  
-    .writer-book-card:last-child {
-      grid-column: auto;
-  
-      max-width: none;
-    }
-  
-  
-    .writer-book-cover {
-      height: 430px;
-    }
-  
-  
-    /* NOU PROJECTE */
-  
-    .writer-new-book {
-      padding: 80px 6%;
-  
-      display: block;
-    }
-  
-  
-    .writer-new-book-content {
-      max-width: none;
-  
-      margin-bottom: 55px;
-    }
-  
-  
-    .writer-new-book-content h2 {
-      font-size: 58px;
-    }
-  
-  
-    .writer-trailer h3 {
-      font-size: 28px;
-    }
-  
-  
-    /* BLOG */
-  
-    .writer-blog {
-      padding: 80px 6%;
-    }
-  
-  
-    .writer-blog-heading {
-      display: block;
-  
-      text-align: center;
-    }
-  
-  
-    .writer-blog-heading h2 {
-      margin-bottom: 25px;
-    }
-  
-  
-    .writer-blog-grid {
-      grid-template-columns: repeat(2, 1fr);
-  
-      gap: 12px;
-    }
-  
-  
-    /* CONTACTE */
-  
-    .writer-contact {
-      padding: 80px 6%;
-    }
-  
-  
-    .writer-contact h2 {
-      font-size: 56px;
-    }
-  
-  
-    /* FOOTER */
-  
-    .writer-footer {
-      padding: 55px 20px 35px;
-    }
-  
-  
-    .writer-footer-social {
-      gap: 12px;
-    }
-  
-  
-    .writer-footer-social a {
-      width: 43px;
-      height: 43px;
-  
-      font-size: 17px;
-    }
-  
+
+  .writer-new-book-content h2 {
+    font-size: 50px;
   }
-  
-  
-  /* =========================================================
-     MÒBIL PETIT
-  ========================================================= */
-  
-  @media (max-width: 430px) {
-  
-    .writer-hero h1 {
-      font-size: 55px;
-    }
-  
-  
-    .writer-hero-quote {
-      font-size: 22px;
-    }
-  
-  
-    .writer-section-heading h2,
-    .xiu-xiu-heading h2 {
-      font-size: 45px;
-    }
-  
-  
-    .writer-blog-grid {
-      grid-template-columns: 1fr;
-    }
-  
-  
-    .writer-contact h2 {
-      font-size: 47px;
-    }
-  
+
+  .writer-contact h2 {
+    font-size: 47px;
   }
+
+  .writer-blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
