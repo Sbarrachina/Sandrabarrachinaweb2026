@@ -296,46 +296,79 @@ CONFIGURACIÓ GENERAL
   ========================================================= */
   
   .writer-books {
-  position: relative;
-  overflow: hidden;
-  padding: 120px 7%;
-  background: #f4f1eb;
-  }
+    position: relative;
+    overflow: hidden;
+    padding: 120px 7% 130px;
   
-  .writer-books::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("/img/2026/fondo libreria .jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.096;
-  pointer-events: none;
+    background:
+      linear-gradient(
+        rgba(244, 241, 235, 0.91),
+        rgba(244, 241, 235, 0.91)
+      ),
+      url("/img/2026/fondo libreria .jpeg");
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .writer-books > * {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
   }
   
   .writer-section-heading {
-  max-width: 850px;
-  margin: 0 auto 65px;
-  text-align: center;
+
+    max-width: 850px;
+  
+    margin: 0 auto 65px;
+  
+    text-align: center;
+    
+  
+  }
+  
+  
+  .writer-section-label {
+
+    display: block !important;
+  
+    font-size: 60px !important;
+  
+    font-weight: 600 !important;
+  
+    letter-spacing: 0.18em !important;
+  
+    margin-bottom: 18px !important;
+    color: #000;
+  
   }
   
   .writer-section-heading h2 {
-  font-family: Georgia, serif;
-  font-size: clamp(48px, 6vw, 76px);
-  font-weight: 400;
-  margin-bottom: 25px;
+  
+    font-family: Georgia, serif;
+  
+    font-size: clamp(54px, 6.5vw, 84px);
+  
+    font-weight: 400;
+  
+    margin-bottom: 25px;
+    color: #000;
+  
   }
   
+  
   .writer-section-heading p {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #625d56;
+  
+    font-size: 23px;
+  
+    line-height: 1.8;
+  
+    color: #0c0c0c;
+  
+  
+    padding-bottom: 15px;
+  
   }
   
   .writer-books-grid {
@@ -429,21 +462,63 @@ CONFIGURACIÓ GENERAL
   /* =========================================================
   TERCER LLIBRE - PROPERAMENT
   ========================================================= */
-  
   .writer-book-third {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image:url("/img/2026/fondo\ libro\ 3.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  opacity: 40%;
+
+    position: relative;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    text-align: center;
+  
+    overflow: hidden;
+  
+    color: #ffffff;
+  
   }
   
+  
+  /* FONS DE LA PORTADA */
+  
+  .writer-book-third::before {
+  
+    content: "";
+  
+    position: absolute;
+  
+    inset: 0;
+  
+    background-image: url("/img/2026/fondo\ para\ llibre\ 3.png");
+  
+    background-size: cover;
+  
+    background-position: center;
+  
+    background-repeat: no-repeat;
+  
+    opacity: 0.30;
+  
+    z-index: 0;
+  
+  }
+  
+  
+  /* TEXT PER SOBRE DE LA IMATGE */
+  
+  .writer-book-placeholder {
+  
+    position: relative;
+  
+    z-index: 1;
+  
+    opacity: 1;
+  
+  }
   .writer-book-placeholder {
   display: flex;
   flex-direction: column;
@@ -607,7 +682,7 @@ CONFIGURACIÓ GENERAL
   rgba(55,48,42,0.88),
   rgba(24,24,24,0.97)
   ),
-  url("/img/2026/fondo libreria .jpeg");
+  url("/MisImg/background1-movil.png");
   
   background-size: cover;
   background-position: center;
@@ -765,7 +840,7 @@ CONFIGURACIÓ GENERAL
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  opacity: 0.096;
+  opacity: 1;
   pointer-events: none;
   }
   
@@ -780,6 +855,11 @@ CONFIGURACIÓ GENERAL
   line-height: 0.95;
   font-weight: 400;
   margin-bottom: 40px;
+  color: #ffffff;
+  }
+  
+  #contacteblanc{
+    color: #ffffff;
   }
   
   /* =========================================================
@@ -1170,3 +1250,732 @@ CONFIGURACIÓ GENERAL
   }
   }
   
+  /*  */
+/* =========================================================
+   ALTRES OBRES — CARRUSEL
+========================================================= */
+
+.writer-other-books {
+  position: relative;
+  overflow: hidden;
+
+  padding: 130px 7% 160px;
+
+  background:
+    linear-gradient(
+      rgba(244, 241, 235, 0.91),
+      rgba(244, 241, 235, 0.91)
+    ),
+    url("/img/2026/fondo libreria .jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* =========================================================
+   CAPÇALERA
+========================================================= */
+
+.writer-section-heading {
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+}
+
+
+.writer-section-label {
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: .72rem;
+
+  font-weight: 600;
+
+  letter-spacing: .16em;
+
+}
+
+
+.writer-section-heading h2 {
+
+  margin: 0 0 15px;
+
+  font-size: 2rem;
+
+  font-weight: 400;
+
+}
+
+
+.writer-section-heading p {
+
+  margin: 0;
+
+  color: black;
+
+  line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   CARRUSEL
+========================================================= */
+
+.writer-trailer-carousel {
+
+  max-width: 1400px;
+
+  width: 100%;
+
+  margin: 55px auto 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+}
+
+
+.writer-trailer-track {
+
+  width: 100%;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+}
+
+
+/* =========================================================
+   DIAPOSITIVES
+========================================================= */
+
+.writer-trailer-slide {
+
+  display: none;
+
+  grid-template-columns:
+    270px
+    minmax(250px, 1fr)
+    560px;
+
+  gap: 45px;
+
+  align-items: center;
+
+  background: #ffffff;
+
+  padding: 55px 40px;
+
+  min-height: 560px;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 15px 40px rgba(58, 43, 28, .10);
+
+}
+
+
+.writer-trailer-slide.active {
+
+  display: grid;
+
+}
+
+
+/* =========================================================
+   PORTADA
+========================================================= */
+
+.writer-trailer-cover {
+
+  display: flex;
+
+  justify-content: center;
+
+  perspective: 1000px;
+
+}
+
+
+.writer-trailer-cover a {
+
+  display: block;
+
+  position: relative;
+
+  text-decoration: none;
+
+}
+
+
+/* =========================================================
+   PORTADA REAL
+========================================================= */
+
+.writer-trailer-cover img {
+
+  width: 270px;
+
+  height: auto;
+
+  display: block;
+
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, .18);
+
+  transition:
+    transform .5s ease,
+    box-shadow .5s ease;
+
+}
+
+
+/* =========================================================
+   PORTADA DE PROVA
+========================================================= */
+
+.writer-placeholder-image {
+
+  width: 270px;
+
+  aspect-ratio: 2 / 3;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background: #d8d8d8;
+
+  color: #777;
+
+  font-size: .75rem;
+
+  letter-spacing: .12em;
+
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, .18);
+
+  transition:
+    transform .5s ease,
+    box-shadow .5s ease;
+
+}
+
+
+/* =========================================================
+   EFECTE ZOOM
+========================================================= */
+
+.writer-trailer-cover a:hover {
+
+  z-index: 2;
+
+}
+
+
+.writer-trailer-cover a:hover img {
+
+  transform: scale(1.06);
+
+  box-shadow:
+    0 22px 45px rgba(0, 0, 0, .24);
+
+}
+
+
+.writer-trailer-cover a:hover
+.writer-placeholder-image {
+
+  transform: scale(1.06);
+
+  box-shadow:
+    0 22px 45px rgba(0, 0, 0, .24);
+
+}
+
+
+/* =========================================================
+   INDICADOR AMAZON
+========================================================= */
+
+.writer-trailer-cover a::after {
+
+  content: "VEURE A AMAZON →";
+
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 14px;
+
+  transform:
+    translate(-50%, 10px);
+
+  opacity: 0;
+
+  background: rgba(0, 0, 0, .78);
+
+  color: #ffffff;
+
+  padding: 8px 13px;
+
+  font-size: .65rem;
+
+  letter-spacing: .1em;
+
+  white-space: nowrap;
+
+  transition:
+    opacity .35s ease,
+    transform .35s ease;
+
+}
+
+
+.writer-trailer-cover a:hover::after {
+
+  opacity: 1;
+
+  transform:
+    translate(-50%, 0);
+
+}
+
+
+/* =========================================================
+   INFORMACIÓ
+========================================================= */
+
+.writer-trailer-content {
+
+  min-width: 0;
+
+}
+
+
+.writer-trailer-number {
+
+  color: var(--teal-dark);
+
+  font-size: .72rem;
+
+  font-weight: 600;
+
+  letter-spacing: .16em;
+
+}
+
+
+.writer-trailer-content h3 {
+
+  margin: 12px 0 15px;
+
+  font-size: 1.8rem;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+}
+
+
+.writer-trailer-content p {
+
+  color: var(--muted);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+
+}
+
+
+/* =========================================================
+   BOTÓ AMAZON
+========================================================= */
+
+.writer-trailer-content .writer-button {
+
+  display: inline-block;
+
+  text-decoration: none;
+
+}
+
+
+/* =========================================================
+   TRÀILER
+========================================================= */
+
+.writer-trailer-video {
+
+  width: 560px;
+
+  max-width: 100%;
+
+  overflow: hidden;
+
+}
+
+
+.writer-trailer-video iframe {
+
+  width: 560px;
+
+  height: 315px;
+
+  max-width: 100%;
+
+  display: block;
+
+  border: 0;
+
+}
+
+
+/* =========================================================
+   PLACEHOLDER DELS ALTRES TRÀILERS
+========================================================= */
+
+.writer-video-placeholder {
+
+  width: 100%;
+
+  height: 315px;
+
+  background: #bdbdbd;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+}
+
+
+/* =========================================================
+   BOTÓ PLAY DEL PLACEHOLDER
+========================================================= */
+
+.writer-video-play {
+
+  width: 82px;
+
+  height: 82px;
+
+  border: 2px solid rgba(255,255,255,.8);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.7rem;
+
+  padding-left: 5px;
+
+}
+
+
+.writer-video-placeholder small {
+
+  margin-top: 15px;
+
+  font-size: .68rem;
+
+  letter-spacing: .16em;
+
+}
+
+
+/* =========================================================
+   FLETXES
+========================================================= */
+
+.writer-trailer-arrow {
+
+  width: 48px;
+
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--line);
+
+  background: #ffffff;
+
+  color: var(--teal-dark);
+
+  font-size: 1.4rem;
+
+  cursor: pointer;
+
+  transition:
+    background .25s ease,
+    color .25s ease,
+    transform .25s ease;
+
+}
+
+
+.writer-trailer-arrow:hover {
+
+  background: var(--teal);
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   PUNTS INDICADORS
+========================================================= */
+
+.writer-trailer-dots {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 30px;
+
+}
+
+
+.writer-trailer-dots button {
+
+  width: 9px;
+
+  height: 9px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: #c8c3bc;
+
+  cursor: pointer;
+
+}
+
+
+.writer-trailer-dots button.active {
+
+  background: var(--teal);
+
+}
+
+
+/* =========================================================
+   ADAPTACIÓ — PANTALLES MITJANES
+========================================================= */
+
+@media (max-width: 1250px) {
+
+  .writer-trailer-slide {
+
+    grid-template-columns:
+      250px
+      minmax(180px, 1fr)
+      minmax(400px, 1fr);
+
+    gap: 35px;
+
+  }
+
+
+  .writer-trailer-video {
+
+    width: 100%;
+
+  }
+
+
+  .writer-trailer-video iframe {
+
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 560 / 315;
+
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .writer-other-books {
+
+    padding: 110px 20px;
+
+  }
+
+
+  .writer-trailer-carousel {
+
+    gap: 10px;
+
+  }
+
+
+  .writer-trailer-slide {
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 45px 30px;
+
+    min-height: auto;
+
+  }
+
+
+  .writer-trailer-cover {
+
+    justify-content: center;
+
+  }
+
+
+  .writer-trailer-cover img,
+  .writer-placeholder-image {
+
+    width: min(270px, 75vw);
+
+  }
+
+
+  .writer-trailer-content {
+
+    text-align: center;
+
+  }
+
+
+  .writer-trailer-video {
+
+    width: 100%;
+
+  }
+
+
+  .writer-trailer-video iframe {
+
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 560 / 315;
+
+  }
+
+
+  .writer-video-placeholder {
+
+    height: auto;
+
+    aspect-ratio: 560 / 315;
+
+  }
+
+}
+
+
+/* =========================================================
+   MÒBIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .writer-other-books {
+
+    padding: 80px 15px;
+
+  }
+
+
+  .writer-section-heading h2 {
+
+    font-size: 1.7rem;
+
+  }
+
+
+  .writer-trailer-slide {
+
+    padding: 30px 20px;
+
+  }
+
+
+  .writer-trailer-arrow {
+
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 1.1rem;
+
+  }
+
+
+  .writer-video-play {
+
+    width: 65px;
+
+    height: 65px;
+
+    font-size: 1.4rem;
+
+  }
+
+}

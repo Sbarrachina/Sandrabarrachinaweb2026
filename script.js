@@ -10,3 +10,5 @@ document.querySelectorAll("#MenuItems a").forEach(link => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+
