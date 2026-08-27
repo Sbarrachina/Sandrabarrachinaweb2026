@@ -364,3 +364,30 @@
     }
   
   }
+
+  /* idiomes cAT / ES */
+
+  /* =========================================================
+   SELECTOR D'IDIOMES
+   ========================================================= */
+
+#MenuItems .language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 5px;
+}
+
+#MenuItems .language-switcher a {
+  padding: 10px 2px;
+  font-size: .85em;
+  letter-spacing: .10em;
+}
+
+#MenuItems .language-switcher span {
+  color: #dfd2c0;
+}
+
+#MenuItems .language-switcher a.language-active {
+  color: #397c78;
+}

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 
-<html lang="ca">
+<html lang="es">
 
     <head>
 
         <meta charset="UTF-8">
-    
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>Contacte | Sandra Barrachina</title>
-    
+
+        <title>Contacto | Sandra Barrachina</title>
+
         <!-- CSS GENERAL DE LA WEB -->
         <link rel="stylesheet" href="css/style.css">
-    
+
         <!-- Bootstrap -->
         <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
         <!-- Font Awesome -->
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
-        <!-- CSS EXCLUSIU DE CONTACTE -->
+
+        <!-- CSS EXCLUSIVO DE CONTACTO -->
         <link rel="stylesheet" href="css/contacte.css">
+
         <link rel="stylesheet" href="/css/navbar.css">
-    
+
     </head>
 
 
@@ -30,62 +31,91 @@
 
 
     <!-- =========================================================
-         CAPÇALERA
+         CABECERA
     ========================================================== -->
 
     <header>
-        <nav class="navbar">
-      
-          <a href="/index.html" class="logo-link">
-            <img src="./img/2026/logoSandra2026.png" id="Sb-logo" alt="Sandra Barrachina">
-          </a>
-      
-          <button class="menu-icon" id="menuToggle" aria-label="Obrir menú">
-            <span></span><span></span><span></span>
-          </button>
-      
-          <ul id="MenuItems">
-            <li><a class="active" href="/index.html">INICI</a></li>
-            <li><a href="/pospo.html">POSTPRODUCCIÓ</a></li>
-            <li><a href="/escritora.html">ESCRIPTORA</a></li>
-            <li><a href="/Contacto.html">CONTACTE</a></li>
-      
-            <!-- IDIOMES -->
-            <li class="language-switcher">
-              <a href="/Contacto.html" class="language-active" lang="ca">CAT</a>
-              <span>|</span>
-              <a href="/contacto-es.html" lang="es">ES</a>
-            </li>
-      
-          </ul>
-        </nav>
-      </header>
 
+        <nav class="navbar">
+
+          <a href="/index.html" class="logo-link">
+
+            <img src="./img/2026/logoSandra2026.png" id="Sb-logo" alt="Sandra Barrachina">
+
+          </a>
+
+          <button class="menu-icon" id="menuToggle" aria-label="Abrir menú">
+
+            <span></span><span></span><span></span>
+
+          </button>
+
+          <ul id="MenuItems">
+
+            <li>
+              <a class="active" href="/index.html">INICIO</a>
+            </li>
+
+            <li>
+              <a href="/pospo.html">POSTPRODUCCIÓN</a>
+            </li>
+
+            <li>
+              <a href="/escritora.html">ESCRITORA</a>
+            </li>
+
+            <li>
+              <a href="/Contacto.html">CONTACTO</a>
+            </li>
+
+            <!-- IDIOMAS -->
+
+            <li class="language-switcher">
+
+              <a href="/Contacto.html" lang="ca">CAT</a>
+
+              <span>|</span>
+
+              <a href="/contacto-es.html" class="language-active" lang="es">ES</a>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+    </header>
 
 
     <!-- =========================================================
-         CONTINGUT PRINCIPAL
+         CONTENIDO PRINCIPAL
     ========================================================== -->
 
     <main class="contact-page">
 
 
-        <!-- CAPÇALERA DE CONTACTE -->
+        <!-- CABECERA DE CONTACTO -->
 
         <section class="contact-hero">
 
             <div class="contact-hero-inner">
 
                 <span class="contact-kicker">
-                    PARLEM
+
+                    HABLEMOS
+
                 </span>
 
                 <h1>
-                    Contacte
+
+                    Contacto
+
                 </h1>
 
                 <p>
-                    Tens alguna pregunta, proposta o simplement vols posar-te en contacte amb mi?
+
+                    ¿Tienes alguna pregunta, propuesta o simplemente quieres ponerte en contacto conmigo?
+
                 </p>
 
             </div>
@@ -93,9 +123,8 @@
         </section>
 
 
-
         <!-- =====================================================
-             FORMULARI
+             FORMULARIO
         ====================================================== -->
 
         <section class="contact-section">
@@ -106,110 +135,153 @@
                 <div class="contact-intro">
 
                     <span class="contact-small-title">
-                        ESCRIU-ME
+
+                        ESCRÍBEME
+
                     </span>
 
                     <h2>
+
                         Estaré encantada<br>
-                        de llegir-te.
+
+                        de leerte.
+
                     </h2>
 
                     <p>
-                        Pots utilitzar aquest formulari per enviar-me un missatge.
-                        Et respondré tan aviat com sigui possible.
+
+                        Puedes utilizar este formulario para enviarme un mensaje.
+
+                        Te responderé tan pronto como sea posible.
+
                     </p>
 
                 </div>
 
 
-
                 <div class="contact-col">
 
                     <form
+
                         action="https://formspree.io/f/mpzbokrb"
+
                         method="post"
+
                         class="contact-form"
+
                     >
 
                         <div class="form-group-custom">
 
                             <label for="name">
-                                Nom
+
+                                Nombre
+
                             </label>
 
                             <input
+
                                 type="text"
+
                                 id="name"
+
                                 name="name"
-                                placeholder="El teu nom"
+
+                                placeholder="Tu nombre"
+
                                 required
+
                             >
 
                         </div>
-
 
 
                         <div class="form-group-custom">
 
                             <label for="email">
-                                Correu electrònic
+
+                                Correo electrónico
+
                             </label>
 
                             <input
+
                                 type="email"
+
                                 id="email"
+
                                 name="email"
-                                placeholder="El teu correu electrònic"
+
+                                placeholder="Tu correo electrónico"
+
                                 required
+
                             >
 
                         </div>
-
 
 
                         <div class="form-group-custom">
 
                             <label for="subject">
-                                Assumpte
+
+                                Asunto
+
                             </label>
 
                             <input
+
                                 type="text"
+
                                 id="subject"
+
                                 name="subject"
-                                placeholder="De què vols parlar?"
+
+                                placeholder="¿De qué quieres hablar?"
+
                                 required
+
                             >
 
                         </div>
 
 
-
                         <div class="form-group-custom">
 
                             <label for="message">
-                                Missatge
+
+                                Mensaje
+
                             </label>
 
                             <textarea
+
                                 id="message"
+
                                 name="message"
+
                                 rows="7"
-                                placeholder="Escriu aquí el teu missatge..."
+
+                                placeholder="Escribe aquí tu mensaje..."
+
                                 required
+
                             ></textarea>
 
                         </div>
 
 
-
                         <button
+
                             type="submit"
+
                             class="contact-submit"
+
                             id="boton2-c"
+
                         >
 
-                            ENVIAR MISSATGE
+                            ENVIAR MENSAJE
 
                             <span>→</span>
 
@@ -226,9 +298,8 @@
     </main>
 
 
-
     <!-- =========================================================
-         PEU DE PÀGINA
+         PIE DE PÁGINA
     ========================================================== -->
 
     <footer class="contact-footer">
@@ -236,100 +307,178 @@
         <div class="social">
 
             <a
+
             href="https://www.youtube.com/c/SandraBarrachina"
+
             target="_blank"
+
             rel="noopener noreferrer"
+
             aria-label="YouTube"
+
           >
+
             <img
+
               src="https://cdn.simpleicons.org/youtube/ffffff"
+
               alt="YouTube"
+
             >
+
           </a>
-        
+
+
           <!-- INSTAGRAM -->
+
           <a
+
             href="https://www.instagram.com/sbarrachinafilms/"
+
             target="_blank"
+
             rel="noopener noreferrer"
+
             aria-label="Instagram"
+
           >
+
             <img
+
               src="https://cdn.simpleicons.org/instagram/ffffff"
+
               alt="Instagram"
+
             >
+
           </a>
-        
+
+
           <!-- FLICKR -->
+
           <a
+
             href="https://www.flickr.com/photos/120700302@N02/"
+
             target="_blank"
+
             rel="noopener noreferrer"
+
             aria-label="Flickr"
+
           >
+
             <img
+
               src="https://cdn.simpleicons.org/flickr/ffffff"
+
               alt="Flickr"
+
             >
+
           </a>
-        
+
+
           <!-- SPOTIFY -->
+
           <a
+
             href="https://open.spotify.com/show/5DtUmw4sQnoUFCVvFSdkTe?si=5b7a2fe4055347d7"
+
             target="_blank"
+
             rel="noopener noreferrer"
+
             aria-label="Spotify"
+
           >
+
             <img
+
               src="https://cdn.simpleicons.org/spotify/ffffff"
+
               alt="Spotify"
+
             >
+
           </a>
-        
+
+
           <!-- FACEBOOK -->
+
           <a
+
             href="https://www.facebook.com/SbarrachinaEscritora"
+
             target="_blank"
+
             rel="noopener noreferrer"
+
             aria-label="Facebook"
+
           >
+
             <img
+
               src="https://cdn.simpleicons.org/facebook/ffffff"
+
               alt="Facebook"
+
             >
+
           </a>
-        
+
+
           <!-- BLOGGER -->
+
           <a
+
             href="https://sandrabarrachina.blogspot.com/"
+
             target="_blank"
+
             rel="noopener noreferrer"
+
             aria-label="Blogger"
+
           >
+
             <img
+
               src="https://cdn.simpleicons.org/blogger/ffffff"
+
               alt="Blogger"
+
             >
+
           </a>
-        
+
+
           <!-- LINKEDIN -->
+
           <a
+
           href="https://www.linkedin.com/in/sandra-barrachina-00569630/"
+
           target="_blank"
+
           rel="noopener noreferrer"
+
           aria-label="LinkedIn"
+
         >
+
           <i class="fa fa-linkedin"></i>
+
         </a>
 
 
         </div>
 
 
-
         <p>
 
-            ©2026 All rights reserved · made by SBarrachina Code
+            ©2026 Todos los derechos reservados · made by SBarrachina Code
 
             <i class="fa fa-heart-o"></i>
 
@@ -338,21 +487,27 @@
     </footer>
 
 
-
     <!-- =========================================================
          SCRIPTS
     ========================================================== -->
+
     <script src="./script.js"></script>
 
 
     <script
+
         type="text/javascript"
+
         src="./jquery/jquery-3.6.0.min.js">
+
     </script>
 
     <script
+
         type="text/javascript"
+
         src="./venobox/venobox.min.js">
+
     </script>
 
 
@@ -363,9 +518,13 @@
             $(".venobox").venobox({
 
                 closeColor: "#f4f4f4",
+
                 spinColor: "#f4f4f4",
+
                 arrowsColor: "#f4f4f4",
+
                 closeBackground: "#17191D",
+
                 overlayColor: "rgba(23,25,29,0.8)"
 
             });
